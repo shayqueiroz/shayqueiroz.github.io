@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2 - HTML | CSS</title>
+    <link rel="shortcut icon" href="css.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estilo02.css">
+</head>
+<body>
+    <header>
+        <h1>Módulo 2 - HTML|CSS</h1>
+        <p>Síntese de todo o conteúdo aprendido no curso de HTML5 e CSS3, no site do <a href="https://www.cursoemvideo.com/" id="header-link">Curso em Vídeo</a>.</p>
+    </header>
+    <nav>
+        <a href="index.html">Módulo 1</a>
+        <a href="#">Módulo 2</a>
+        <a href="#">Módulo 3</a>
+    </nav>
+    <main>
+        <section>
+            <p>Neste arquivo está toda aplicação dos exercícios realizados no segundo módulo do curso de HTML5 e CSS. Nele consta também anotações dos principais conteúdos aprendidos.</p>
+            <h1>Conteúdo das aulas</h1>
+        <ul>
+            <h2><li>Capítulo 13</li></h2>
+                <ul>
+                <h3><li>Aula 1 - Cores</li></h3>
+                <img src="imagens/circulo-cromatico.svg" alt="círculo cromático">
+                
+                <p><strong>Cores complementares:</strong> aquelas que têm maior contraste entre si, localizadas do lado imediatamente oposto do círculo cromático.</p>
+                <img src="imagens/cores-complementares.png" class="paleta" alt="exemplo de cores complementares">
+                <p><strong>Cores análogas:</strong> são aquelas que são imediatamente vizinhas entre si, apresentam baixo contraste.</p>
+                <img src="imagens/cores-analogas.png" class="paleta" alt="exemplo de cores análogas">
+                <p><strong>Cores triádicas:</strong> escolha de três cores equidistântes resultando em um ótimo contraste, e que formam um triângulo equilátero.</p>
+                <img src="imagens/cores-triadicas.png" class="paleta" alt="exemplo de cores triádicas">
+                <p><strong>Cores em quadrado:</strong> seleção de quatro cores com um contráste razoável entre as cores escolhidas.</p>
+                <img src="imagens/cores-quadradas.png" class="paleta" alt="exemplo de cores em quadrado">
+                <p><strong>Cores tetrádicas:</strong> pares de cores complementares com bastante contraste entre si.</p>
+                <img src="imagens/cores-tetradicas.png" class="paleta" alt="exemplo de cores tetrádicas">
+                <p><strong>Monocromia:</strong> variação do brilho e saturação de uma cor, modificando apenas seu tom.</p>
+                <img src="imagens/monocromia.png" class="paleta" alt="exemplo monocromia"><br>
+                
+                <h3><li>Aula 2 - Cores com CSS3</li></h3>
+                <p>As cores em CSS podem ser representadas de 3 formas:</p>
+                    <p><ul>
+                        <li>Usando palavra-chave: <em>blue, black, skyblue, grey...</em></li>
+                        <li>Usando <abbr title="red, green, blue">RGB</abbr>: <em>#00FF00</em> ou <em>rgb (250,140,95)</em></li>
+                        <li>Usando <abbr title="hue, saturation, luminosity">HSL</abbr>: (000, 100%, 10%)<em></em></li>
+                </ul></p>
+            
+                <h3><li>Aula 4 - Paletas de Cores</li></h3>
+                <p>As peletas são as cores escolhidas para personalizar o site. O ideal é levar em consideração a harmonia entre elas para que o site fique agradável aos olhos do usuário. Além disso, é aconselhável que a escolha da paleta não tenha tantas cores, pelo mesmo motivo acima citado.</p>
+                    <h4>
+                        <p><strong>Onde gerar suas paletas</strong></p>
+                    </h4>
+                    <ul>
+                        <li><a href="https://color.adobe.com/pt/explore" target="_blank" class="externo"> Adobe</a></li>
+                        <li><a href="https://coolors.co/" target="_blank" class="externo"> Coolors</a></li>
+                    </ul><br>
+
+                <h3><li>Aula 5 - Como capturar cores da tela?</li></h3>
+                <p>Por meio de uma extensão do <strong>Google Chrome</strong>, podemos adicionar a ferramenta <a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp" target="_blank" class="externo">Colorzilla</a> para identificar exatamente o código de uma cor encontrada em qualquer site.</p>
+                    
+                <h3><li>Aula 6 - Criando degradê com CSS</li></h3>
+                <p>A forma mais simples de criar um efeito degradê no site é usando o sistema <code>rgb</code> ou <code>hsl</code>, por fornecer mais opções de variação de cor. Ainda é possível adicionar transparência através do valor <em>alpha</em>, que virá sempre por último (caso queira diminuir a opacidade da cor).
+                <br>De forma prática, temos a seguinte estrutura em CSS para a criação de gradientes:
+
+                <pre class="code-box">
+                body {
+                    font-family:
+                    <strong>background-image: linear-gradient (90deg, skyblue, deepskyblue);</strong>
+                    color: black;
+                }</pre>
+                    
+                <p>A linha em destaque corresponde a configuração do degradê em CSS. Na ordem, os valores correspondem a: <em>direção/ângulo, uma primeira cor, uma segunda cor</em>.
+
+                    <img src="imagens/linear-gradiente.png" alt="gradiente linear">
+
+                <p>Também existe outra forma de criar este efeito, usando ao invés de <code>linear-gradient</code>, que cria um degradê linear angular, o <code><strong>radial-gradient</strong></code>, que vai criar um efeito degradê de forma radial.</p>
+                <pre class="code-box">
+                <strong>background-image:</strong> radial-gradient (circle, color 1, color 2, color 3 ...);</pre>
+
+                <img src="imagens/radial-gradiente.png" alt="gradiente radial">
+
+                <p><strong class="negrito">NOTA:</strong> é possível escolher quantas cores quiser. O navegador automaticamente vai conseguir identificá-las e gerar o efeito degradê com as cores escolhidas.</p>
+                </ul>
+            </ul><br>
+            <ul>
+                <h2><li>Capítulo 14</li></h2>
+                <ul>
+            
+                    <h3><li>Aula 2 - Anatomia do tipo</li></h3>
+                    <h4>
+                        <p><strong>Categoria de fontes</strong><br>
+                    </h4>
+                        Existem cinco categorias para fontes tipográficas:
+                        <ul>
+                            <li><strong>Serifadas:</strong> aquelas onde as letras possuem prolongamentos (serifas), que criam um efeito de leitura em bloco na nossa visão, guiando nossa leitua através das serifas.</li>
+                            <li><strong>Não Serifadas:</strong> não apresentam aquele prolongamento nas letras como as serifadas. São recomendáveis para sites devido a sua característica <em>clean</em>, organizada e clara.</li>
+                            <li><strong>Monoespaçadas:</strong> este tipo de fonte pode ou não apresentar serifas. São caracterizadas pelo espaço horizontal (largura) igual entre todas as letras.</li>
+                            <li><strong>Script:</strong> também conhecidas como <em>handwriting</em>, são fontes que buscam reproduzir a escrita humana.</li>
+                            <li><strong>Display:</strong> são aquelas que não se enquadram nas categorias acima, caracterizadas por efeitos visuais diferenciados e bastante gráficos.</li>
+                        </ul>
+                    </p>
+            
+                    <h3><li>Aula 3 - Família de fonte com CSS</li></h3>
+                    <p>Para atribuir uma família em um código CSS, utilizamos a propriedade <code>font-family</code>, que vai indicar ao navegador qual a fonte desejada para o conteúdo do site.
+                    <h4>
+                        <p><strong>Estrutura:</strong></p>
+                    </h4>
+                <pre class="code-box">
+                body {
+                    <strong>font-family:</strong> 'Franklin Gothic Medium', 'Arial Narrow', Arial, <strong>sans-serif</strong>;</strong>
+                }</pre>
+                    <p>A estrutura acima indica uma ordem de preferência de fonte. Caso o navegador não reconheça a primeira, ele vai buscar as seguintes em ordem. Se ainda assim nenhuma das fontes forem encontradas ou compatíveis com o navegador, ele utilizará alguma outra com a categoria genérica para a categoria da fonte. Este recurso é chamado de <code>safe-combination</code>.
+                    </p>
+            
+                    <h3><li>Aula 4 - Tamanho de fonte e suas medidas</li></h3>
+                    <p>
+                    Existem muitas formas de especificar medidas em CSS, mas a recomendação para tamanho de fontes, segundo a <a href="https://www.w3schools.com/" target="_blank" class="externo">W3Schools</a> são as unidades de <code><strong>px</strong>(pixels)</code> ou <code><strong>em</strong>(emphasis)*</code>.
+            
+                    <p><strong class="negrito">NOTA:</strong> * <code>em </code> está relacionada ao referencial do tamanho da fonte.</p>
+                    <p>Geralmente o tamanho padrão de uma fonte é de <strong>16px</strong>, e isso equivale a <strong>1em</strong>. Se quisermos uma fonte 2x maior do que a padrão, usaremos 2em, 3x maior, 3em e assim por diante. E isso corresponderá, em pixels, a 16px, 32px, etc respectivamente.</p>
+                    <h4>
+                        <p><strong>Exemplo:</strong></p>
+                    </h4>
+                <pre class="code-box">
+                h1 {
+                    <strong>font-family:</strong>
+                    <strong>font-size:</strong> 2em;
+                }
+                h2 {
+                    <strong>font-size:</strong> 1.5em
+                }</pre>
+                    <p>No exemplo acima, todo <code>&lt;h2&gt;</code> terá 1.5x o tamanho padrão da fonte de referência.
+                    </p>
+            
+                    <h3><li>Aula 5 - Peso, estilo e <em>shorthand font</em></li></h3>
+                    <p>Como CSS não é responsável pela semântica do conteúdo, é possível adicionar propriedades como <strong>negrito</strong> e <em>itálico</em> as fontes. Usamos para isso <code>font-style</code> e <code>font-weight</code>, respectivamente. Onde o <code>font-style</code> pode receber atribuição italic, normal ou oblique, e o <code>font-weight</code> variando de 500 a 900, ou bold, bolder, light, lighter e normal.</p>
+                    <p><strong class="negrito">NOTA:</strong> os valores de <code>font-weight</code> podem ou não ser compatíveis com o tipo de fonte. Existem fontes que não aceitam variações de peso.</p>
+                    
+                    <h4>
+                        <p><strong><em>Shorthand-style</em></strong></p>
+                    </h4>
+                        <p>É um atalho que permite reunir em um único lugar todas as configurações de fonte.
+                    </p>
+                    <h4>
+                        <p><strong>Exemplo:</strong></p>
+                    </h4>
+                <pre class="code-box">
+                p {
+                    <strong>font-family:</strong> Arial, Helvetica, sans-serif;
+                    <strong>font-size:</strong> 1em;
+                    <strong>font-style:</strong> italic;
+                    <strong>font-weight:</strong> lighter;
+                }</pre>
+                    <h4>
+                        <p><strong>Usando <em>shorthand:</em></strong></p>
+                    </h4>
+                <pre class="code-box">
+                p {
+                    <strong>font:</strong> italic lighter 1em Arial, Helvetica, sans-serif;
+                }</pre>
+                    <p><strong class="negrito">NOTA:</strong> é extremamente importante que a ordem da <em>shorthand</em> seja respeitada. No caso da propriedade <code>font</code>, a ordem é sempre:</p>
+                    <ul>
+                        <code>
+                            <li>font-style</li>
+                            <li>font-variant</li>
+                            <li>font-weight</li>
+                            <li>font-size/line-height</li>
+                            <li>font-family</li>
+                        </code>
+                    </ul>
+                    <p>
+                        Para alinhamento de texto utilizamos <code>text-align</code> com os seguintes valores:
+                    </p>
+                        <ul>
+                            <code>
+                                <li>left;</li>
+                                <li>right;</li>
+                                <li>center;</li>
+                                <li>justify;</li>
+                            </code>
+                        </ul><br>
+            
+                        <h3><li>Aula 6 e 7 - Google Fonts e fontes externas</li></h3>
+                    <p>
+                    Para identificarmos o tipo de uma fonte em um site, podemos utilizar a extensão do <strong>Google Chrome:</strong> <a href="https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh" target="_blank" class="externo">Fonts Ninja</a>. Esta ferramenta vai permitir que se identifique todas as propriedades da fonte, como família tipográfica, tamanho, peso, espaçamento horizontal e cor aplicada. Basta mover o cursor sobre o texto no site para que essas informações apareçam.</a>
+                    </p>
+                    <h4>
+                        <p><strong>Google Fonts</strong></p>
+                    </h4>
+                    <p>No site <a href="https://fonts.google.com/" target="_blank" class="externo">Google Fonts</a>, está disponível diversas fontes das categorias <code>serifadas, não serifadas, display, monoespaçadas e scriptadas</code> que podem ser aplicadas ao site. Para adicioná-las, é preciso escolher uma fonte, depois clicar em <strong>@import</strong> para ter acesso aos códigos que serão colocados no arquivo de estilos CSS. Esta parte do <strong>@import</strong> com as informações de url da fonte escolhida, deverá ser colocada na primeira linha da declaração do documento CSS, enquanto a especificação do <strong>CSS rules</strong> ficará no campo de propriedades do <code>font-family</code> de todo seletor que se desejar aplicar a fonte selecionada.</p>
+                    
+                    <h4>
+                        <p><strong>Fontes externas</strong></p>
+                    </h4>
+
+                    <p>Existem diversos sites para escolher fontes além do <strong>Google Fonts</strong>. Para utilizarmos fontes baixadas, devemos adicionar nas primeiras linhas do documento de estilo, a propriedade <strong>@font-face</strong>, que vai conter no campo de <code>font-family</code> a fonte baixada num site externo.</p>
+                    <p>
+        <pre class="code-box">
+    <strong>@font-face</strong> {
+        font-family: "Nome da fonte externa";
+        src: url("pasta/"Nome da fonte externa.TTF") format(tipo de formato do arquivo);
+    }</pre>
+                    <p><strong class="negrito">OBS.:</strong> no <code>font-family</code> iremos dar nome para a fonte que baixamos. Uma vez que dermos nome a esta fonte, na linha seguinte, na parte de <code>src: url</code>, vamos selecionar onde está o arquivo dessa fonte. É importante, como forma de manter os arquivos organizados, criar uma pasta para os arquivos de fonte.<br>Já no campo de <code>format</code>, temos 5 tipos:</p>
+                    <p>
+                        <ul>
+                        <code>
+                            <li>opentype (.otf)</li>
+                            <li>truetype (.ttf)</li>
+                            <li>embedded-opentype</li>
+                            <li>truetype-aat (Apple Advanced Typography)</li>
+                            <li>svg</li>
+                        </code>
+                        </ul>
+                    </p>
+                    <p>Mas os mais utilizados são os formatos <strong>opentype</strong> e <strong>truetype</strong>.
+                    </p><br>
+            </ul>
+            
+            <h2><li>Capítulo 15</li></h2>
+                <h3>
+                    <ul><li><strong>Aula 1 e 2 - Direfenças entre id e class em CSS</strong></li>
+                </h3>
+                <ul>
+                    <p>Em HTML, quando queremos dar identidade para um elemento único, atribuimos a ele a propriedade <code><strong>id</strong></code>, e quando são mais de um elemento com características semelhantes, os agrupamos em <code><strong>class</strong></code>. É possível ainda, aplicar mais de uma classe a um elemento, e também é possível ter um <code>id</code> e uma <code>class</code> em um mesmo elemento, considerando que as propriedades de <code>id</code> irá sobrepor as propriedades da <code>class</code>.</p>
+
+                    <h4>
+                        <p><strong>Seletores personalizados CSS</strong></p>
+                    </h4>
+                                    <code class="code-box">
+                                        <li># = id</li>
+                                        <li>. = class</li>
+                                        <li>: = pseudo-class</li>
+                                        <li>:: = pseudo-element</li>
+                                        <li>&gt; = children</li>
+                                    </code>
+                        <h4>
+                            <p><strong>Exemplo 1 - id e class no HTML:</strong></p>
+                        </h4>
+                <pre class="code-box">
+                &lt;body&gt;
+                    &lt;h1 <strong>id="título principal"</strong>&gt; EXEMPLO DE TÍTULO &lt;/h1&gt;
+                    &lt;h1&gt; HTML e CSS &lt;/h1&gt;
+                    &lt;h2 <strong>class="topico"</strong>&gt;SEMÂNTICA WEB &lt;/h2&gt;
+                    &lt;p <strong>class="texto"</strong>&gt; lorem ipsum lorem ipsum lorem ipsum lorem
+                          ipsum lorem ipsum lorem ipsum lorem  ipsum lorem ipsum &lt;/p&gt;
+                &lt;/body&gt;</pre>
+
+                        <p>O <code>&lt;h1&gt;</code> principal possui um <code>id</code>, isso vai identificar um elemento único dentro da página atual e permitir criar um estilo especial para este elemento de forma isolada. Enquanto um <code>class</code> vai identificar um conjunto de um ou mais elementos (classe), que compartilham características comuns à todos da mesma classe. <br>
+                        Em resumo, no exemplo acima, todos os elementos de <code>&lt;h1&gt;</code>, identificados pelo <code>id</code> receberam uma característica especial atribuída à ele, e todo elemento identificado com <code>class="texto"</code>, receberam características especiais, assim como os de <code>class="texto"</code>.</p>
+                        <p><strong class="negrito">NOTA:</strong> em um mesmo documento HTML, só podemos usar um <code>id</code> para um único elemento. Não é possível ter dois elementos com um mesmo <code>id</code> dentro de uma mesma página. Ao contrário do <code>class</code>, em que podemos ter vários elementos que possuam essa mesma característica.</p>
+
+        <h4>
+            <p><strong>Exemplo 2 - id e class no CSS</strong></p>
+        </h4>
+            <pre class="code-box">
+                body {
+                    <strong>font:</strong> lighter 1em Arial, Helvetica, sans-serif;
+                }
+                h1 {
+                    <strong>font-size:</strong> 2em;
+                    <strong>color:</strong> deepskyblue;
+                }
+                h2 {
+                    <strong>color:</strong> blue;
+                }</pre>
+        <h4>
+            <p><strong>Exemplo 3 - seletores: id e class:</strong></p>
+        </h4>
+            <pre class="code-box">
+                <strong>#titulo-principal</strong> {
+                        background-color: deepskyblue;
+                        color: white;
+                        text-align: center;
+                }
+                <strong>.topico</strong> {
+                        text-align: right;
+                }
+                <strong>.texto</strong> {
+                        text-align: justify;
+                }</pre>
+                                <h4>
+                                    <p><strong>EXPLICANDO O CÓDIGO:</strong><br>
+                                </h4>
+                                Exemplo 1, estamos identificando semanticamente quais elementos receberão características especiais (h1 terá um id e o h2 e p terão classes diferentes). <br>
+                                No Exemplo 2, atribuimos características para os elementos do documento HTML, como o tipo da fonte para o corpo do site e o tamanho e cor para os títulos. <br>
+                                No Exemplo 3, caracterizamos os seletores especiais (<code>id e class</code>). Atribuído anteriormente no documento HTML (Exemplo 1). Nele personalizamos para o título, a cor de fundo, a cor do texto e o seu alinhamento.</p>
+                                <p>Com isso, teremos o seguinte resultado:</p>
+
+                        <img src="imagens/seletores.png" alt="seletores" class="menor">
+                                <h4>
+                                    <p><strong>Propriedades herdadas</strong></p>
+                                </h4>
+                                <p>As propriedades herdadas referem-se as características que são transmitidas de um elemento pai para seus elementos filhos. Ou seja, quando aplicamos uma propriedade a um elemento principal, essa propriedade pode ser automaticamente aplicada aos elementos dentro dele, a menos que sejam especificamente sobrescritos. <br>
+                                Isso significa dizer que, caso haja duplicidade nas configurações, o que fica valendo no final é a propriedade especificada nas configurações mais abaixo do código. Cada camada de aplicação de estilos vai adicionando propriedades novas e sobrescrevendo as configurações do nível anterior.<br></p>
+                                <p><strong>Exemplo:</strong>
+                                Num documento HTML para aplicarmos estilos, temos a seguinte ordem:
+                                <ol>
+                    <li>CSS externo</li>
+                    <li>CSS local</li>
+                    <li>CSS inline</li>
+                                </ol>
+                                <p>Com isso, temos que as especificações de estilo acima do inline, vão adicionar novas configurações de estilo, mas em caso de duplicidade (como já dito acima), o que prevalece será o que foi especificado nas configurações inline.</p>
+                                <p><strong class="negrito">NOTA:</strong> o uso do símbolo "&gt;" em um seletor, indicamos os filhos imediatos de um elemento.</p>
+                <pre class="code-box">
+                div:hover > p {}</pre>
+            
+                <h3>
+                    <li><strong>Aula 3 - Pseudo-classes em CSS</strong></li>
+                </h3>
+                <p>As pseudo-classes são seletores especiais que permitem aplicar estilos a elementos específicos. Elas são identificadas por <code>":"</code> e são usadas para selecionar elementos que estão em uma posição particular dentro do documento HTML. <br>
+                As pseudo-classes são bastante úteis para aplicar estilos a elementos interativos com base nas ações do usuário. Elas adicionam uma camada extra de flexibilidade ao estilo dos elementos, permitindo interações visuais no site.</p>
+                <p>As pseudo-classes mais comuns são:</p>
+                <ul>
+                    <li><code>:hover</code> - aplica estilo quando o cursor estiver sobre o elemento.</li>
+                    <li><code>:visited</code> - usado para mostrar que um link da página já foi visitado.</li>
+                    <li><code>:active</code> - usado para aplicar estilo a um elemento enquanto ele estiver sendo clicado ou pressionado.</li>
+                    <li><code>:checked</code> - usado junto com elementos de entrada como caixas de seleção, permitindo que aplique estilo aos elementos marcados ou selecionados pelo usuário.</li>
+                    <li><code>:empty</code> - usado para selecionar elementos que não têm nenhum conteúdo filho, incluindo elementos que não têm texto ou outros elementos aninhados dentro deles.</li>
+                    <li><code>:focus</code> - usado para selecionar um elemento quando ele está em foco, ou seja, quando o usuário interage com o elemento.</li>
+                </ul>
+                <p>
+                    <h4>Exemplo do uso de <code>:hover</code>
+                    </h4>
+                <div>
+                    Passe o mouse aqui!
+                    <p><strong>&rarr; You got it! &larr;</strong></p>
+                </div>
+                <br>
+                <h3>
+                    <li><strong>Aula 4 - Pseudo-elementos em CSS</strong></li>
+                </h3>
+                <p>Os pseudo-elementos seletores especiais que permitem adicionar estilos a partes específicas de um elemento, como se fossem elementos HTML independentes, mas sem a necessidade de adicionar marcação adicional. Os pseudo-elementos são representados por "::" seguidos pelo nome.</p>
+                <p>Os pseudo-elementos mais comuns são:</p>
+                <ul>
+                    <li><code>::before</code> - permite adicionar conteúdo antes do conteúdo real do elemento. É frequentemente usado para adicionar elementos visuais, como ícones ou decorações.</li>
+                <li><code>::after</code> - permite adicionar conteúdo após o conteúdo real do elemento, atribuindo detalhes visuais, como linhas de separaçao ou marcadores de fim.</li>
+                    <li><code>::first-letter</code> - seleciona a primeira letra de um elemento, permitindo aplicar estilos exclusivos a ela. É muito usado para criar um efeito de letra inicial decorativa.</li>
+                    <li><code>::first-line</code> - seleciona a primeira linha de um elemento, como um parágrafo. Permitindo que se aplique estilos à primeira linha do texto, como alterar a fonte ou adicionar uma cor diferente.</li>
+                </ul>
+            </ul>
+            </ul>
+                </ul><br>
+            <ul>
+                <h2><li>Capítulo 16</li></h2>
+                <ul>
+                    <h3>
+                        <li><strong>Aula 1 a 3 - Modelando Caixas</strong></li>
+                    </h3>
+                <p>As caixas em HTML são blocos de conteúdos. Estes blocos são como uma caixa retangular invisível. Quando criamos coisas em uma página web, como textos, imagens, vídeos etc, estamos colocando esses elementos em diferentes tipos de caixas que podem receber estilos e ser organizadas com CSS para formar o layout da página.</p>
+            
+                <h4>
+                    <p><strong>Anatomia de uma caixa</strong></p>
+                </h4>
+                <img src="imagens/box-model.png" alt="modelo de caixa css" class="menor">
+                <p>Toda caixa em HTML possui as seguintes propriedades:</p>
+                <ul>
+                    <li><code>content</code>: área onde o conteúdo real do elemento é exibido. Esta área de conteúdo é conhecida como <code>box-size</code>, influenciada pela: </li>
+                    <ul>
+                        <li><code>width</code>: largura</li>
+                        <li><code>height</code>: altura</li>
+                    </ul>
+                    <li><code>padding</code>: área de preenchimento entre o conteúdo e a borda (da borda para dentro).</li>
+                    <li><code>border</code>: área que fica em volta do conteúdo, podendo receber definições de espessura, cor e formato.</li>
+                    <li><code>margin</code>: área externa da borda.</li>
+                </ul>
+                <p>Existe ainda o <code>outline</code>, que é a área entre a borda e a margem. É pouquíssimo utilizada, possui um traçado visual que podemos criar fora da borda, e o cálculo da sua espessua faz parte da margem estabelecida.</p>
+                <p><strong class="negrito">NOTA:</strong> para sabermos a largura e altura total de um elemento na tela, devemos somar os tamanhos:</p>
+                <p id="centro"><code><strong>content + padding + border + margin</strong></code>.</p>
+                <img src="imagens/exemplo-caixa.png" alt="exemplo de caixa" class="menor">
+                <p>Na imagem acima temos:</p>
+
+            <pre class="code-box">
+                h1 {
+                    <strong>width:</strong> 300px;
+                    <strong>height:</strong> 50px;
+                    background-color: lightpink;
+                    <strong>border-width:</strong> 10px;
+                    border-style: solid;
+                    border-color: aqua;
+                    <strong>padding:</strong> 20px;
+                    <strong>outline-widith:</strong> 30px;
+                    outline-style: solid;
+                    outline-color: skyblue;
+                    <strong>margin:</strong> 50px;
+                }</pre>
+
+            <p>As medidas de <code>height</code> e <code>width</code>, 300px e 50px respectivamente, correspondem as medidas somente da parte pontilhada do conteúdo, onde está escrito "Exemplo de Caixa".</p>
+            <p>A parte na cor aqua, que é a <code>border</code>, tem 10px e a parte skyblue <code>outline</code> 30px. O <code>padding</code> é de 20px e fica da borda para dentro, por fim <code>margin</code> é de 50px e fica da borda para fora.</p>
+            <p>Deste modo, a medida <strong>total</strong> que essa caixa vai ocupar é: <strong>width = 460px</strong> e <strong>height = 210px</strong>.</p>
+            <h4>
+                <p><strong>Shorthand</strong></p>
+            </h4>
+            <p>Podemos simplificar as configurações de borda e contorno com uma <em>shorthand</em>. E a ordem deve ser sempre a mesma, tanto para as <em>shorthands</em> <code>-width, -style, -color</code>.</p>
+            <h4>
+                <p><strong>Modo completo</strong></p>
+            </h4>
+                <code class="code-box">
+                border-width: 10px;<br>
+                border-style: solid;<br>
+                border-color: yellow;<br>
+                outline-widith: 30px;<br>
+                outline-style: solid;<br>
+                outline-color: blue;<br>
+                </code>
+            <h4>
+                <p><strong>Shorthand</strong></p>
+            </h4>
+                <code class="code-box">
+                    <strong>border:</strong> 10px solid yellow;<br>
+                    <strong>outline:</strong> 30px solid blue;
+                </code>
+            <h4>
+                <p><strong>Padding e Margin</strong></p>
+            </h4>
+            <p>Todo <em>box-element</em> tem quatro valores para <code>padding</code> e <code>margin</code>, e será considerado sempre os valores no sentido horário: <code><strong>-top, -right, -bottom, -left</strong></code>. Estas configurações também possuem <em>shorthands</em>.</p>
+            <h4>
+                <p><strong>Modo completo</strong></p>
+            </h4>
+                <div class="code-box" id="colunas">
+                    <code>
+                    padding-top: 10px;<br>
+                    padding-right: 15px;<br>
+                    padding-bottom: 20px;<br>
+                    padding-left: 25px;<br>
+                    
+                    margin-top: 0px;<br>
+                    margin-right: 10px;<br>
+                    margin-bottom: 20px;<br>
+                    margin-left: 30px;
+                    </code>
+                </div>
+            <h4>
+                <p><strong>Shorthand</strong></p>
+            </h4>
+                <code class="code-box">
+                    <strong>padding:</strong> 10px 15px 20px 25px;<br>
+                    <strong>margin:</strong> 0px 10px 20px 30px;
+                </code>
+            <p><strong class="negrito">NOTA:</strong> quando os valores para <code>padding</code> e <code>margin</code> tiverem um único valor (ex.: 10px para top, right, bottom e left), podemos encurtar e usar <code>padding:10px; | margin: 10px;</code> que este valor será aplicado de forma simétrica para todas as direções. <br>
+            Para duas medidas iguais, sempre em pares (top-bottom e left-right), podemos usar o <em>shorthand</em> <code>padding: 10px 20px; | margin: 0px 15px;</code></p>
+            <p>Existe um recurso muito usado para personalização dos blocos, que são as <strong>margens automáticas</strong>. Este recurso é muito interessante pois permite que o navegador calcule automaticamente as margens laterais de forma que o bloco de conteúdo se posicione no meio, independente das dimensões da janela.<br>Para isso, utilizamos a seguinte declaração no seletor:</p>
+            <pre class="code-box">
+                <strong>margin:</strong> auto;</pre>
+
+            <h4>
+                <p><strong>Largura e altura adaptáveis</strong></p>
+            </h4>
+            <p>Caso não façamos ajustes no <em>width</em> e <em>heigth</em> das caixas, esta vai ocupar 100% do bloco. Mas para que o site se adapte mais facilmente ao tamanho da tela, podemos deixar algumas caixas mais flexíveis indicando valores mínimos e máximos.</p>
+
+            <code class="code-box"><pre>
+                <strong>min-width:</strong> 400px;
+                <strong>max-width:</strong> 800px;</pre></code>
+
+        <p>No exemplo de configuração acima, os valores vão garantir que a caixa não fique com largura menor que 400px (para telas menores) e nem seja maior que 800px (telas muito grandes). </p>
+        <p>Para medidas entre 400px e 800px, o tamanho será adaptável e a caixa vai ocupar 100% da largura do bloco.</p>
+            <h4>
+                <p><strong>Tipos de Caixas</strong></p>
+            </h4>
+            <p>Existem duas categorias de caixas, a do tipo <code><strong>block-level</strong></code> e <code><strong>inline-level</strong></code>.</p>
+            <p>Por padrão, a caixa do tipo <code><strong>block-level</strong></code>, apresenta os elementos posicionados como blocos independentes em relação aos outros. Eles começam em uma nova linha e ocupam a largura total do navegador. Já a caixa do tipo <code><strong>inline-level</strong></code>, os elementos não começam em uma nova linha. Eles fluem dentro do conteúdo ao redor, ocupando apenas o espaço necessário para exibir seu conteúdo.</p>
+            <img src="imagens/inline-block-level.png" alt="inline e block level" class="menor">
+            <p>Na imagem acima temos exemplos de <strong><code>block-level</code></strong> e <strong><code>inline-level</code></strong>.</p>
+            <p>Nestes dois modelos de caixa podemos destacar alguns exemplos de tags para cada um deles.</p>
+            <h4>
+                <p><strong>Elementos HTML block-level</strong></p>
+            </h4>
+                <code><p class="code-box">
+                    &lt;div&gt;
+                    &lt;nav&gt;
+                    &lt;main&gt;
+                    &lt;header&gt;
+                    &lt;footer&gt;
+                    &lt;h1&gt;-&lt;h6&gt;
+                    &lt;article&gt;
+                    &lt;aside&gt;
+                    &lt;ol&gt;
+                    &lt;ul&gt;
+                    &lt;li&gt;
+                    &lt;dt&gt;
+                    &lt;dd&gt;
+                    &lt;p&gt;
+                </code></p>
+                <h4>
+                    <p><strong>Elementos HTML inline-level</strong></p>
+                </h4>
+                <code><p class="code-box">
+                    &lt;a&gt;
+                    &lt;abbr&gt;
+                    &lt;img&gt;
+                    &lt;em&gt;
+                    &lt;br&gt;
+                    &lt;strong&gt;
+                </code></p>
+            </ul>
+                <ul>
+                    <h3>
+                        <li><strong>Aula 4 - Grouping Tags em HTML5</strong></li>
+                    </h3>
+                <p>Em HTML as tags são semânticas, enquanto em CSS atribuimos estilo a elas. Diante disso, as <em><strong>grouping tags</strong></em> surgem como tags semânticas de agrupamento. O que antes era feito de forma genérica com a tag <code>&lt;div&gt;</code>e a tag <code>&lt;span&gt;</code>, cuja diferença básica entre elas é ser do agrupador <em>block-level</em> e <em>inline-level</em> respectivamente. As tags semânticas de agrupamento servem para juntar vários outros elementos HTML.</p>
+
+                <h4>
+                    <p><strong>Agregadores semânticos da linguagem de HTML5</strong></p>
+                </h4>
+                <ul>
+                    <li><code>&lt;header&gt;</code> - cria áreas relativas ao cabeçalho. Pode ser o cabeçalho principal de um site ou até mesmo um cabeçalho de uma seção ou artigo, podendo conter menus de navegação.</li>
+                    <li><code>&lt;nav&gt;</code> - define uma área que possui os links de navegação pela estrutura de páginas que vão compor o site, pode estar dentro de um <code>&lt;header&gt;</code>. Dentro do <code>&lt;nav&gt;</code>, podemos adicionar uma propriedade que permite uma animação do menu, para isso utiliza-se <code>nav > a {transition-duration;}</code>, além das demais configurações de cor, margin, padding, border, font-weight, text-decoration etc.</li>
+                    <li><code>&lt;main&gt;</code> - é um agrupador usado para delimitar o conteúdo principal do site, onde se concentra as sections, articles e asides..</li>
+                    <li><code>&lt;section&gt;</code> - cria seções para sua página, podendo conter o conteúdo diretamente no seuc corpo ou dividi-los em artigos com conteúdos específicos.</li>
+                    <li><code>&lt;article&gt;</code> - é um elemento que vai conter um conteúdo que pode ser lido de forma independente e diz respeito a um mesmo assunto.</li>
+                    <li><code>&lt;aside&gt;</code> - delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção.</li>
+                    <li><code>&lt;footer&gt;</code> - cria um rodapé para o site inteiro, seção ou artigo, é um elemento que possui autoria do desenvolvimento do site.</li>
+                </ul>
+                <h4>
+                    <p><strong>Exemplificando as tags semânticas</strong></p>
+                </h4>
+            <img src="imagens/grouping-tags.png" alt="grouping tags" class="menor">
+
+                <h3>
+                    <li><strong>Aula 5 - Sombras nas caixas</strong></li>
+                </h3>
+                <p>As <em><strong>box-shadows</strong></em> são usadas para adicionar um efeito de profundidade nos blocos de conteúdo do site. É importante dizer que o exagero nas suas configurações pode ser visualmente desagradável para o usuário que navega pelo site. Portanto é aconselhável que usemos com equilíbrio esta configuração.</p>
+                <p>Podemos configurar as sombras de tal maneira:</p>
+                
+                <code class="code-box"><pre>
+                article#caixa {
+                    background-color: cinza;
+                    width: 400px;
+                    margin: auto;
+                    padding: 1px 10px;
+                    <strong>box-shadow: 3px 5px 4px black;</strong>
+                }</pre></code>
+
+                <p>No código acima, temos um artigo em uma caixa centralizada, por conta do <strong><code>margin: auto;</code></strong>, de cor cinza, com <strong><code>padding</code></strong> de um 1px de espaçamento na parte superior e inferior, e 10px de espaçamento nas laterais direita e esquerda, com sombra de deslocamento horizontal <strong><code>(h-offset)</code></strong> de 3px, deslocamento vertical <strong><code>(v-offset)</code></strong> de 5px, embaçamento <strong><code>(blur)</code></strong> de 4px e a cor preta para sombra, que pode ser acrescida de transparência para dar um aspecto mais suave e natural pra caixa.</p>
+                <p><strong class="negrito">NOTA:</strong> a ordem dessa propriedade será sempre nestes valores: <code>h-offset - v-offset - blur - color</code>.<br>
+                    Considerando que para valores negativos de <em>h-offset</em> e <em>v-offset</em>, as sombras vão se deslocar para esquerda e para cima, respectivamente.</p>
+
+                    <h4>
+                        <p><strong>Sombras em textos</strong></p>
+                    </h4>
+                    <p>Assim como existe o <code>box-shadow</code> para sombrear as caixas, existe também a propriedade <code>text-shadow</code>, que permite que seja aplicada sombra no texto. Como no <code>box-shadow</code>, o <code>text-shadow</code> também possui valores que devem ser aplicados em ordem para <em>h-offset, v-offset, blur, color</em>. Essa propriedade serve para dar destaque na letra e no seu background, criando um contraste entre elas.</p>
+                    <pre class="code-box">
+                    <strong>text-shadow:</strong> 2px 2px 0px <strong>rgba (0, 0, 0, 0.455);</strong></pre>
+                    <p>* O último valor do <code>rgba</code> no código acima, é relativo à transparência da sombra.</p>
+
+                    <img src="imagens/text-shadow.png" alt="exemplo de box e text shadow" class="menor"> <br>
+
+                    <h3>
+                        <li><strong>Aula 6 - Caixas com vértices arredondados</strong></li>
+                    </h3>
+                    <p>Por padrão, os vértices das caixas possuem ângulo de 90°, mas é possível personalizá-las para que fiquem com aspecto arredondado através da propriedade <code><strong>border-radius</strong></code>.
+                    <p>Assim como a propriedade de <strong><code>margin</code></strong>, os valores serão declarados sempre no sentido horário: <em>top - right - bottom - left</em>, e podem receber um valor, dois ou todos.</p>
+                    <h4>
+                        <p><strong>Exemplo:</strong></p>
+                    </h4>
+                    <img src="imagens/border-radius.png" alt="border radius"></p>
+                    <p>Na primeira imagem do exemplo, foi aplicado quatro valores diferentes para cada vértice, tendo uma pequena diferença visual na caixa de conteúdo. Já na segunda imagem, foi aplicado dois valores que vão agir em extremidades opostas (top-right e bottom left). Por fim, na última imagem temos um valor que será aplicado igualmente em todos os vértices.</p>
+                    
+
+                    <h3>
+                        <li><strong>Aula 7 - Bordas decoradas</strong></li>
+                    </h3>
+                    <p>As bordas decoradas, também conhecidas como bordas estilizadas, são atribuídas quando queremos adicionar elementos especiais ao redor nas caixas de conteúdo. Podem ser ir de decorações mais simples, como pontos, traços e arredondamento de vértices até imagens e cores.<br><br>
+                        Nas bordas decoradas, teremos 3 propriedades:
+                    <br><br>
+                        <strong><code>border-image-source:</code></strong>(indica o caminho da imagem a ser usada como borda)<br>
+                        <strong><code>border-image-slice:</code> </strong>(indica quanto da imagem será usada para cada uma das bordas, aceitando até 4 valores: borda superior - borda direita - borda inferior - borda esquerda)<br>
+                        <strong><code>border-image-repeat:</code></strong>(indica que a imagem vai se repetir ao longo da margem)<br>
+                    <p><strong class="negrito">NOTA:</strong> as configurações para bordas decoradas vem podem vir acompanhadas de outras propriedades, como text-align, padding, border etc.</p>
+                    <img src="imagens/borda-decorada.png" alt="borda decorada" class="menor">
+                </ul>
+            </ul><br>
+
+            <ul>
+                <h2><li>Capítulo 17</li></h2>
+                <ul>
+                    <h3>
+                        <li><strong>Aula 6 - Variáveis em CSS</strong></li>
+                    </h3>
+            <ul>
+    
+                <p>No documento <code>.css</code> (ou dentro da tag style, quando as configurações de estilo forem feitas no próprio documento html) criamos uma área de definições no cabeçalho para uma pseudo-classe <code>"root {}"</code>, que vai permitir que todas as definições criadas dentro dela sirva para o documento inteiro, criando variáveis globais. Essas variáveis sempre vão começar com <code>"--"</code>.</p>
+                <h4>
+                    <p><strong>Exemplo:</strong></p>
+                </h4>
+            <code class="code-box"><pre>
+                :root {
+                    <strong>--cor0:</strong> #ccebd1;
+                    <strong>--cor1:</strong> #daf5d5;
+                    <strong>--cor2:</strong> #d5decc;
+                    <strong>--cor3:</strong> #f1f5d5;
+                    <strong>--cor4:</strong> #ebe9cc;
+                    <strong>--fonte0:</strong> Roboto, Helvetica, sans-serif;
+                    <strong>--fonte1:</strong> 'BB Manual Mono Pro TX', mono;
+                    <strong>--fonte2:</strong> 'Outra Fonte', sans-serif;
+                }</pre></code>
+                
+                <p>A partir dessa pseudo-class <code>:root {}</code> do exemplo acima, é possível definir cores e fontes nos elementos HTML de forma mais simples e personalizável, usando a função <code>var()</code>.</p>
+            <pre class="code-box">
+                body {
+                    <strong>font-family:</strong> var(--font0);
+                    <strong>color:</strong> var(--cor0);
+                    <strong>background-color:</strong> var(--cor1);
+                }</pre>
+                <p>O seletor <code>*</code> em CSS, tem a função de <strong>seletor global</strong>. Ele será responsável por permitir que todas as configurações padrão de estilo definidas sejam atribuídas em todo documento, permitindo que se configure os elementos de forma manual.</p>
+            <pre class="code-box">
+                * {  }</pre>
+                <h4>
+                    <p><strong>Espaçamento entrelinhas em textos</strong></p>
+                </h4>
+                <p>O espaçamento entre as linhas dos textos é muito importante, principalmente para texto muito longos. Para configurar isso, utilizamos a propriedade <code>line-height</code>, que vai permitir que possamos definir o tamanho do espaçamento entre uma linha e outra.</p>
+                <img src="imagens/espacamento.png" alt="exemplos de espaçamento" class="menor">
+            
+                <h4>
+                    <p><strong>Listas personalizadas</strong></p>
+                </h4>
+                <p>É possível adicionar outros tipos de configurações de listas além das ordenadas <code>&lt;ol&gt;</code>, não ordenadas <code>&lt;ul&gt;</code> e mistas <code>&lt;ol&gt; e &lt;ul&gt;</code>. Uma dessas configurações é dividir uma lista em duas colunas e modificar o marcador para além dos marcadores padrão (<em>disc, circle, square</em>).</p>
+            <p><strong class="negrito">NOTA:</strong> podemos usar marcadores que quisermos, desde que ele possua um código, como os do <a href="https://emojipedia.org/" target="_blank" class="externo">Emojipedia</a>.</p>
+            <pre class="code-box">
+                ul {
+                    list-style-type: <strong>'\2611\0020\0020';</strong>
+                    columns: 2;
+                    list-style-position: <strong>inside;</strong>
+                }</pre>
+            <p>No exemplo acima, os valores do primeiro parâmetro (<code>list-style-type</code>), corresponde a um símbolo de código <code>U+2611</code> referenciado no Emojipedia. Já o valor <code>\0020</code>, que acompanha o código do emoji, corresponde a um espaço em branco. Já o <code>list-style-position</code>, vai fazer com que os marcadores sejam exibidos na parte interna da caixa que contém a lista, por padrão, este valor é <code>outside</code>.</p>
+            <img src="imagens/marcadores.png" alt="marcadores de lista" class="menor"> </ul><br>
+
+                    <h3>
+                        <li><strong>Aula 7 e 8 - Responsividade</strong></li>
+                    </h3>
+                <p>Sites responsivos são aqueles que se adaptam a vários dispositivos com tamanhos diferentes de tela. Isto é, o site vai ser capaz de adaptar os tamanhos dos seus componentes para manter o site visível e proporcionar uma experiência de usuário otimizada em qualquer tela.</p>
+                <p>Para deixar um site responsivo, utilizamos o <code><strong>min-width</strong></code> e <code><strong>max-widith</strong></code>. Os valores para estas propriedades vão variar de acordo com o tipo de site, e devem ser testados para se adaptar ao que está sendo proposto. 
+                
+                <h4>
+                    <p><strong>Configurações de imagem</strong></p>
+                </h4>
+                <p>Para fazer ajustes nas imagens, fazemos modificações dos valores de <code><strong>img {width: x %;}</strong></code> ou <code><strong>max-width: 000px;</strong></code>. E no conteúdo HTML, usamos dentro da tag <code>&lt;picture&gt;</code> os <code>&lt;sources&gt;</code>, deixando a imagem padrão mais embaixo na ordem.</p>
+                <p>Além disso, para centralizar imagens, podemos usar a seguinte configuração:</p>
+            <pre class="code-box">
+                main img.pequena {
+                    max-width: 350px;
+                    display: block;
+                    margin: auto;
+                }</pre>
+            <h4>
+                <p>Exemplo</p>
+            </h4>
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/responsiva-peque.png" class="menor">
+                <img src="imagens/responsiva-padrao.png" alt="guitarras" class="menor">
+            </picture>
+
+            <p id="centro">(Redimensione a janela do seu navegador para perceber a responsividade da imagem)</p>
+                <h4>
+                    <p><strong>Explicação</strong></p>
+                </h4>
+                <p>Isso significa que a imagem de <code>class ='pequena'</code> foi ajustada para não perder muito da sua resolução, foi criado também um bloco para esta imagem (lembrando que os blocos possuem <em>margin - padding - border</em>), e por fim, por conta do <code>margin: auto;</code> a imagem ficará centralizada no site.</p>
+            
+            <h3><li>Aula 12 - Vídeos Responsivos</h3></li>
+                <p>Assim como as imagens, também é possível adicionar configurações para que os vídeos se adaptem os mais diversos dispositivos. <br>
+                Quando utilizamos vídeos do <strong>Youtube</strong> ou <strong>Vimeo</strong>, por exemplo, eles já vêm com uma pré-configuração, o <code>&lt;iframe&gt;</code>, que possui dimensões fixas. Para que possamos alterar isso, de forma que o vídeo possa se adaptar melhor a interface do site ficando mais responsivo, precisamos colocar o <code>&lt;iframe&gt;</code> de incorporação dentro de uma <code>&lt;div&gt;</code>, de forma que o vídeo esteja limitado dentro de um bloco.</p>
+            <pre class="code-box">
+                &lt;div class="video"&gt;
+                    &lt;!-- CÓDIGO DO IFRAME EXTRAÍDO DO YOUTUBE/VIMEO --&gt;
+                &lt;/div&gt;</pre>
+                <p>Depois disso, é recomendável fazer as configurações de estilo para os dois elementos:</p>
+            <pre class="code-box">
+                div.video {
+                    position:
+                    background-color:
+                    height:
+                    margin-top:
+                    margin-right:
+                    margin-bottom:
+                    margin-left:
+                    padding-bottom:
+                } 
+                
+                div.video &gt; iframe {
+                    position:
+                    top:
+                    left:
+                    width:
+                    height:
+                }</pre>
+            <h4>
+                <p>Exemplo</p>
+            </h4>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2Thx4wrM9Uw?si=8w3FGvjpkD1uddEP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+                <p>Em resumo, na declaração HTML envelopamos o <code>&lt;iframe&gt;</code> dentro da tag <code>&lt;div&gt;</code> e criamos um <code>id</code> (caso o vídeo seja um elemento único) ou um <code>&lt;class&gt;</code> (em caso de mais de um elemento). <br>
+                Depois, no documento CSS, criamos o <code>div.video {}</code>, onde faremos as configurações de background, margin, padding, position, etc. Por fim, criamos o <code>div.video > iframe {}</code>, para fazer as configurações finais de deslocamento à esquerda e ao topo, seu tamanho em largura e altura (todos em porcentagem).</p>
+                <p><strong class="negrito">Observações:</strong> na <code>div</code> para os valores de <code>position:</code>, se colocarmos <code>relative</code>, significa que será considerado o posicionamento atual do elemento de divisão, e ele vai se manter adaptável para caso de alteração das dimensões do navegador. <br>
+                Dentro do <code>iframe</code>, se usarmos o <code>position:</code> com valor <code>absolute</code>, a <code>div</code>, que é o bloco, vai se tornar o ponto de partida para o posicionamento do frame. A partir disso é possível fazer as configurações de deslocamento (top-left) e de tamanho (width-height).</p>
+                </ul>  
+            </ul>
+            <aside>
+                <h3>Próximo módulo:</h3>
+
+                <p>Neste <strong>Módulo-2</strong> do curso de HTML e CSS, foi sintetizado conceitos aprendidos com as atividades e aulas dos capítulos 13 ao 17. Aprendemos sobre:</p>
+
+                <ul>
+                    <li>Fundamentos do design</li>
+                    <li>Psicologia das cores</li>
+                    <li>Tipografia</li>
+                    <li>Elementos CSS</li>
+                    <li>Modelos de caixas</li>
+                    <li>Wireframe</li>
+                    <li>Organização de conteúdo</li>
+                    <li>Responsividade de imagens</li>
+                    <li>Responsividade de vídeos</li>
+                    <li>Shorthands</li>
+                    <li>Listas personalizadas</li>
+                </ul>
+
+                <p>
+                    No Módulo 3, aprenderemos mais sobre hospedagem de site no <a href="https://github.com/" id="header-link">GtiHub</a>, versionamento de software, tabelas e mais configurações de CSS.
+                </p>
+                <p>Para ver os conteúdos completos do curso de HTML e CSS, acesse aqui o site do <a href="https://www.cursoemvideo.com/" id="header-link" target="_blank">Curso em Vídeo</a> ministrado pelo professor Gustavo Guanabara.</p>
+            </aside>
+            <p>Esta página foi feita com base nas propriedades aprendidas nos dois primeiros módulos do curso de HTML e CSS. Todas as anotações aqui presentes foram feitas de acordo com o meu entendimento de entusiasta e novata no assunto e, obviamente, pode conter outras formas de interpretação do assunto.</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Shayene
+    </footer>
+</body>
+</html>

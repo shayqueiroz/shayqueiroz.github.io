@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos</title>
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <h1>Módulo 1 - HTML5 | CSS</h1>
+<p>Neste arquivo estão todos os exercícios do primeiro módulo do curso de HTML5 e CSS. Nele constam também anotações dos principais conteúdos aprendidos.</p>
+    <h2>Conteúdo das aulas</h2>
+        <ul>
+            <h3><li>Capítulo 3</li></h3>
+            <ul>
+                <h4><li>Aula 1 - A diferença entre HTML, CSS e JavaScript</li></h4>
+                <p><strong>HTML:</strong> <em>Hypertext markup language</em> é uma linguagem de marcação de texto focada no <strong>conteúdo</strong> (tabelas, textos, imagens, listas, expressões etc) do código.</p>
+                <p><strong>CSS: </strong><em>Cascading style sheets</em>, ou folhas de estilo em cascata, é a linguagem responsável pelo <strong><em>design</em></strong> do site. CSS significa que uma página vai modificando as características visuais (cores,tipografia, diagramação, etc) das outras.</p>
+                <p><strong>JavaScript:</strong> É uma linguagem de programação responsável pelas <strong>interações</strong> (menus, animações, popups, etc) do site.</p>
+            </ul>
+            <h3>
+                <li>Capítulo 4</li>
+            </h3>
+            <ul>
+                <h4>
+                    <li>Aula 2 - Primeiro código HTML</li>
+                </h4>
+                <code>
+                    <p>
+                     &lt;!DOCTYPE html&gt;<br>
+                     &lt;html lang="pt-br"&gt;<br>
+                     &lt;head&gt;<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport"<br>
+                     content="width=device-width, initial-scale 1.0"&gt;<br>
+                     &lt;title&gt; NOME QUE APARECE NA ABA DE NAVEGAÇÃO &lt;/title&gt;<br>
+                     &lt;/head&gt;<br>
+                     &lt;body&gt;<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt; Olá, marujo! &lt;/h1&gt;<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Esta é a base do código em HTML-5, com título dentro do cabeçalho,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linha e parágrafos dentro do corpo do código &lt;p&gt;<br>
+                     &lt;/body&gt;<br>
+                     &lt;/html&gt;
+                    </p>
+                </code>
+            </ul>
+            <h3>
+                <li>Capítulo 5</li>
+            </h3>
+            <ul>
+                <h4>
+                    <li>Aula 1 - Parágrafos e Quebras</li>
+                </h4>
+                <p>Os parágrafos vêm sempre entre as tags<code> &lt;p&gt;</code> e <code>&lt;/p&gt;</code>. Enquanto as quebras de linhas vêm acompanhadas da tag <code>&lt;br&gt;</code>, não necessitando de tag de fechamento.</p>
+                <p><strong>Exemplo:</strong></p>
+                <p>* Um</p>
+                <p>** Dois</p>
+                <p>*** Três</p>
+                <p>**** Quatro</p>
+                <br><p>**** Quatro</p>
+                <p>***Três</p>
+                <p>**Dois</p>
+                <p>* Um</p>
+                <h4>
+                    <li>Aula 2 - Símbolos e Emojis</li>
+                </h4>
+                <p>Os símbolos e emojis são carcteres especiais, conhecidos como <a href="https://www.w3schools.com/html/html_entities.asp"><em>HTML Entities</em></a>. Os caracteres especiais estão representados pelo & seguido por outro comando. Já os emojis vêm com &#x + <a href="https://emojipedia.org/">código do emoji</a>.</p>
+                <p><strong>Exemplos:</strong></p>
+                <p>Tastes like strawberries &#x1F353; on a summer evenin' &#x1F305; and it sounds like a song &#x1F3B5;. I want more berries &#x1FAD0; (...) Watermelon sugar high &#x1F349;!</p>
+            </ul>
+            <h3>
+                <li>Capítulo 6</li>
+            </h3>
+            <ul>
+                <h4>
+                    <li>Aula 4 - A tag <code>img</code> em HTML5</li>
+                </h4>
+                    <p>A tag <em>img</em>, vem acompanhada de "scr=", onde irá inserir o caminho da imagem (pode ser uma URL ou imagem do próprio diretório) e "alt=", onde é recomendável colocar do que a imagem se trata, para fins de acessibilidade de deficientes visuais que forem inspecionar o site. <br>
+                    <p><strong>Exemplo:</strong></p><code>&lt;img scr="<strong>https://cdn-icons-png.flaticon.com/128/3613/3613825.png</strong>" alt="<strong>ícone de comida</strong>"&lt;p&gt </code>
+                    <p><img src="https://cdn-icons-png.flaticon.com/128/3613/3613825.png" alt="icone de comida"></p>
+                    <p><strong>*Obs:</strong> Para colocar imagem de diretório próprio, é necessário que esta imagem esteja localizada na mesma pasta do código html.</p>
+                        
+                   <h4> 
+                    <li>Aula 5 - Como mudar o favicon de um site</li>
+                   </h4>
+                   <p>O <strong>favicon</strong> do site, é o ícone que aparece na guia de navegação. Ele poderá ser inserido com uma imagem de extensão <strong>.ico</strong>, dentro do cabeçalho do código HTML. Para isso é necessário acrescentar a tag <strong>"link: favicon"</strong> e selecionar o arquivo .ico escolhido para o site. No exemplo abaixo, o favicon desta página é o <strong>html.ico</strong>, inserido dentro do atributo "href". No atributo seguinte (type), é necessário colocar a extensão do arquivo, que neste caso é o "image/x-icon"</p>
+                   <p><strong>Exemplo:</strong></p>
+                   <code>
+                    <p>
+                     &lt;!DOCTYPE html&gt;<br>
+                     &lt;html lang="pt-br"&gt;<br>
+                     &lt;head&gt;<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport"<br>
+                     content="width=device-width, initial-scale 1.0"&gt;<br>
+                     &lt;title&gt;NOME QUE APARECE NA ABA DE NAVEGAÇÃO&lt;/title&gt;<br>
+                    <strong>&lt;link rel="shortcut icon" href="html.ico" type="image/x-icon"</strong><br>
+                    &lt;/head&gt;
+                    </p></code>
+                    <p><strong>*Obs:</strong> Para colocar o favicon, é necessário que este esteja localizado na mesma pasta do código html.
+            </ul>
+            <h3>
+                <li>Capítulo 7</li>
+            </h3>
+            <ul>
+                <h4>
+                    <li>Aula 1 - Hierarquia de Títulos</li>
+                </h4>
+                <p>A hierarquia dos títulos em HTML são representadas pelas tags de <code>&lt;h1&gt;</code> até <code>&lt;h6&gt;</code>.</p>
+                <p><strong>Exemplo:</strong></p>
+                <p style="font-size: xxx-large;">Título principal &lt;h1&gt;</p>
+                <p style="font-size: xx-large;">Título 2 &lt;h2&gt;</p>
+                <p style="font-size: x-large;">Título 3 &lt;h3&gt;</p>
+                <p style="font-size: larger;">Título 4 &lt;h4&gt;</p>
+                <p style="font-size: large;">Título 5 &lt;h5&gt;</p>
+                <p style="font-size: smaller;">Título 6 &lt;h6&gt;</p>
+                
+            </ul>
+            <h3>
+                <li>Capítulo 8</li>
+            </h3>
+            <ul>
+                <h4>
+                    <li>Aula 2 - Negrito e itálico do jeito certo</li>
+                </h4>
+                <p>No HTML-5 o uso de <strong>negrito</strong> se dá pela tag <code>&lt;strong&gt;</code> e o <em>itálico</em> pela tag <code>&lt;em&gt;</code>.</p>
+                <h4>    
+                    <li>Aula 3 - Formatações adicionais em HTML</li>
+                </h4>
+                <p>Existem ainda outros tipos de formatações para textos.</p><br>
+                <strong>Exemplos:</strong>
+                <p><mark>Texto marcado</mark> - tag <code>&lt;mark&gt;</code></p>
+                <p><strike>Texto deletado</strike> - tag <code>&lt;strike&gt;</code></p>
+                <p><ins>Texto inserido</ins> - tag <code>&lt;ins&gt;</code></p>
+                <p>Texto <strong>sob</strong>rescrito: X<sup>(27+y)</sup> - tag <code>&lt;sup&gt;</code></p>
+                <p>Texto <strong>subs</strong>crito: C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> - tag <code>&lt;sub&gt;</code></p>
+                <p><bdo dir="rtl"> Texto invertido</bdo> - tag <code>&lt;bdo&gt;</code>, identificando o atributo <code>dir=""</code> com "rtl"(<em>right-to-left</em>)</p>
+                <h4>
+                    <li>Aula 4 - Citações e Códigos</li>
+                </h4>
+                <p>Para citações simples, geralmente utilizada no meio de um parágrafo, sem deslocamento, utiliza-se a tag <code>&lt;q&gt;</code>.</p>
+                <p><strong>Exemplo de citação simples:</strong></p>
+                <p>Como dizia minha avó: <q>É melhor um pássaro na mão do que dois voando</q>.</p>
+                <p>Já para citações mais longas e que necessitem de um parágrafo só para si, podendo ou não ganhar deslocamento, utilizamos a tag <code>&lt;blockquote&gt;</code>, que pode ser acompanhada do parâmetro <code>cite""</code>, onde podemos inserir de onde aquela citação vem.</p>
+                <p><strong>Exemplo de citação em bloco:</strong></p>
+                <p><blockquote><q>That's the thing about unhappiness, all it takes <br>is for something worse to came along and you <br> realize it was actually happiness after all</q><br> <em>Queen Elizabeth II</em></blockquote></p><br>
+                <p>Existe uma tag que faz com que o usuário ao passar o cursor sobre determinada palavra ou termo, apareça um pequeno texto com seu significado. É comumente utilizada para deixar claro ao usuário e aos mecanismos de busca o significado destes termos. Usamos, neste caso, a tag <code>&lt;abbr&gt;</code>, que virá acompanhada do parâmetro <code>'title=""'</code>, onde inserimos o significado da abreviatura.</p>
+                <p><strong>Exemplo:</strong></p>
+                <p>Curso de <abbr title="HyperText markup language">HTML</abbr> e <abbr title="Cascading style sheets">CSS</abbr> para desenvolvedores Front-End.</p><br>
+                <p>Existe ainda uma tag em para delimitação de códigos de diversas linguagens de programação, a tag <code>&lt;code&gt;</code>, que deixa as letras <code>mono-espaçadas</code>, facilitando na leitura do código.</p>
+                <p><strong>Exemplo sem a tag &lt;pre&gt;:</strong></p>
+                <code>
+                    <p>&lt;h1&gt;Código em Python&lt;/h1&gt;</p>
+                    <p>&lt;code&gt;
+                    <p>num = int(input('Digite um número')) if num % == 0: print(f'O número {num} é par') else: print(f'O número {num} é ímpar') print('FIM DO PROGRAMA')</p>
+                    <p>&lt;/code&gt;</p>
+                </code>
+                <p><strong>Obs:</strong> no exemplo acima, a formatação do código aparece no navegador sem formatação. Para solucionar este problema, utilizamos a tag <code>&lt;pre&gt;</code> dentro da tag &lt;code&gt;
+                <p><strong>Exemplo <ins>com</ins> a tag &lt;pre&gt;:
+                </strong><pre><code>
+                &lt;h1&gt;Código em Python&lt;/h1&gt;
+                &lt;pre&gt;&lt;code&gt;
+                num = int(input('Digite um número')) 
+                if num % 2 == 0: 
+                    print(f'O número {num} é par)
+                else:
+                    print(f'O número {num} é ímpar')
+                print('FIM DO PROGRAMA')
+                &lt;/code&gt;&lt;/pre&gt;
+                </code></pre>
+                </p>
+                <p><strong>Obs:</strong> no exemplo acima, com o uso da tag <code>&lt;pre&gt;</code>, o código obedece uma pre-formatação de texto, se guiando por quebras de linhas, espaçamentos e parágrafos.</p>
+            </ul>
+            <h3>
+                <li>Capítulo 9</li>
+            </h3>
+            <ul>
+                <h4>
+                    <li>Aula 1 - Listas &lt;ol&gt; e &lt;ul&gt;</li>
+                </h4>
+                    <p>As listas <strong>ordenadas</strong>, são aquelas onde a ordem dos itens é importante. Para este tipo de lista, usamos a tag <code>&lt;ol&gt;</code> para delimitar a lista dentro desta tag, usamos <code>&lt;li&gt;</code> para identificar cada item.</p>
+                <p><strong>Exemplo de lista ordenada:</strong></p>
+                <p><ol>
+                    <p>Minhas comidas preferidas:</p>
+                    <li>Macarrão</li>
+                    <li>Burrito</li>
+                    <li>Sushi</li>
+                    <li>Angu</li>
+                </ol></p>
+                <p><strong>Obs:</strong> A tag <code>&lt;ol&gt;</code> possui um parâmetro <code>type</code>, que serve para configurar o tipo de marcador da lista. 
+                <br>(<code>1, A, a, I, i.</code>)<br>Além disso, é possível determinar o início da contagem da lista com o parâmetro <code>start</code>. 
+                <br>(Por exemplo: <code>&lt;ol <strong>type</strong> "i" <strong>start</strong> "5"&gt;</code></p>
+                
+                <p>As listas <strong>não ordenadas</strong> são aquelas em que a ordem dos itens não interfere no seu significado. Comumente utilizada para organizar itens que não apresentam, necessariamente, uma classificação. Para este tipo de lista, usamos a tag <code>&lt;ul&gt;</code>.</p>
+                <p><strong>Exemplo de lista <ins>não</ins> ordenada:</strong></p>
+                <p>Lista de compras:</p>
+                <ul>
+                    <li>Chocolate</li>
+                    <li>Biscoito</li>
+                    <li>Chips</li>
+                    <li>Água</li>
+                </ul>
+                <p><strong>Obs:</strong> Na tag <code>&lt;ul&gt;</code>, podemos determinar o marcador da lista através da propriedade <code>type</code>, com os valores: 
+                <br><strong><code>disc - circle - square</code></strong>.</p>
+                <p>Outra possibilidade de uso das tags <code>&lt;ol&gt; e &lt;ul&gt;</code>, são as chamadas <strong>listas mistas</strong>.</p>
+                <p style="font-size:x-large;"><strong>Jogos favoritos</strong></p>
+                <ul><li>Super Nintendo</li>
+                   <ol>
+                    <li>Super Mario World</li>
+                    <li>Donkey Kong</li>
+                    <ul type="disc">
+                        <li>Donkey Kong Country III</li>
+                        <li>Diddy's Kong Quest</li>
+                    </ul>
+                    <li>Bomberman</li>
+                    <ul type="circle">
+                        <li>Super Bomberman 4</li>
+                        <li>Super Bomberman 5</li>
+                    </ul>
+                    <li>Megaman X</li>
+                   </ol>
+                   <li>PlayStation 4</li>
+                   <ol>
+                        <li>The Sims 4</li>
+                        <li>Fifa 2023</li>
+                        <li>GTA IV</li>
+                   </ol>
+                </ul>
+                <h4>
+                        <li>Aula 2 - Listas mistas e de definição</li>
+                </h4>
+                <p>As <strong>listas de definições</strong> são aquelas que possuem termos e suas descrições. Estas listas não possuem marcadores.</p>
+                <p>Toda lista de <strong>definição</strong> está dentro de uma tag <code>&lt;dl&gt;</code> (<em>definition list</em>), cada <strong>termo</strong> é um <code>&lt;dt&gt;</code> (<em>definition term</em>), e cada <strong>descrição</strong> é um <code>&lt;dd&gt;</code> (<em>definition description</em>).</p>
+                <p><strong>Exemplo de listas de definições:</strong>
+<code><pre>
+        &lt;dl&gt;
+            &lt;dt&gt;HTML&lt;/dt&gt;
+            &lt;dd&gt;Linguagem de marcação para criação de conteúdo de sites.&lt;/dd&gt;
+                        
+            &lt;dt&gt;CSS&lt;/dt&gt;
+            &lt;dd&gt;Linguagem de marcação para especificação de estilos em sites.&lt;/dd&gt;
+                        
+            &lt;dt&gt;JavaScript&lt;/dt&gt;
+            &lt;dd&gt;Linguagem de programação para criar interações em sites.&lt;/dd&gt;
+        &lt;/dl&gt;
+</p></code></pre><br>
+        <p>** O resultado visual no navegador para o exemplo de lista de definições acima é:
+        </p>
+            <dl>
+                    <dt>HTML</dt>
+                    <dd>Linguagem de marcação para criar o conteúdo de site.</dd>
+
+                    <dt>CSS</dt>
+                    <dd>Linguagem de marcação para a especificação de estilos em sites.</dd>
+
+                    <dt>JavaScript</dt>
+                    <dd>Linguagem de progrmação para criar interações em sites.</dd>
+                </dl>
+            </ul>
+    <h3>
+        <li>Capítulo 10</li>
+    </h3>
+        <ul>
+            <h4>
+                <li>Aula 1 - Links e Âncoras em HTML5</li>
+            </h4>
+            <p>Conhecidos como <strong>âncoras</strong>, os <em>hyperlinks</em> permitem que os sites estabeleçam conexões com outras páginas. Seja para acessar um novo site ou até para fazer download de um arquivo. Para criar um <em>hyperlink</em>, utilizamos a tag <code>&lt;a&gt;</code>. Esta tag contém um atributo, o <code>href</code>, que serve para criar uma referência de hipertexto, ou seja, onde colocamos a <strong>URL</strong> de um site.</p>
+            <p><strong>Exemplo de estrutura da tag <code>&lt;a&gt;</code>:</strong></p>
+            <p><code><pre>
+            &lt;h1&gt;Criando um link&lt;/h1&gt;
+            &lt;a href="https://arquituario.netlify.app/glossario/"&gt;Acesse o Arquituário.&lt;/a&gt;
+            </pre></code></p>
+            <p>Outras observações da tag <code>&lt;a&gt;</code>:</p>
+            <ul>
+                <li>Podemos usar o atributo <code>hreflang=""</code> para indicar o idioma principal do site para onde o link está desviando o fluxo de navegação;</li>
+                <li>Para poder controlar a abertura de destino do site, utilizamos o atributo <code>target</code> com 4 valores, mas com destaque para:</li>
+                <ul>
+                    <li><code>_blank</code>, para abrir o link em uma nova janela/guia;</li>
+                    <li><code>_self</code>, para abrir o link na janela/guia atual (padrão)</li>
+                </ul>
+                <li>Outro atributo usado junto a tag <code>&lt;a&gt;</code> é o <code>rel</code>, que indica qual é a natureza do destino do <em>hyperlink</em>.<br>
+                    Ele aceita 5 diferentes valores:</li>
+                <ul>
+                    <li><code>next</code>, para links que vão para a página seguinte do site atual;</li>
+                    <li><code>prev</code>, para links que voltam para a página anterior do site atual;</li>
+                    <li><code>author</code>, para links para site do autor do artigo do site atual;</li>
+                    <li><code>external</code>, para links que não fazem parte do site atual;</li>
+                    <li><code>nofollow</code>, para links pagos;</li>
+                </ul>
+            </ul>
+            <p><strong>Obs:</strong> para links internos (ou locais), é fundamental que o documento .html esteja na mesma pasta. Para links externos, utilizamos a <code>url</code>.</p>
+            <p><strong>Exemplo:</strong>
+            <code><pre>
+            &lt;a <strong>href</strong>="pag002.html" <strong>target</strong>="_self"&gt;
+                Continuar navegando no site
+            &lt;/a&gt;
+            &lt;a <strong>href</strong>="https://arquituario.netlify.app/glossario/" <strong>target</strong>="_blank"&gt;
+                Abrir em uma nova aba
+            &lt;/a&gt;
+            </p></pre></code>
+            <h4>
+                <li>Aula 3 - Links para download</li>
+            </h4>
+            <p>Para fazer download de algum arquivo no site, também utilizamos a tag <code>&lt;a&gt;</code>, mas acompanhada de outros atributos:</p>
+            <ul>
+                <li><code>download</code>: vai indicar o nome do arquivo a ser baixado;</li>
+                <li><code>type</code>: vai indicar ao navegador o tipo de arquivo que será baixado;</li>
+            </ul>
+            <p><strong>Exemplo:</strong>
+            <code><pre>
+            &lt;a href:"arquivos/livro.pdf" <strong>download</strong>="livro.pdf" <strong>type</strong>="application/pdf"
+            Baixe aqui o PDF do livro
+            &lt;/a&gt;
+            </pre></code>
+        <strong>NOTA:</strong> lembrando que o arquivo a ser indexado para download no site deverá estar na mesma página do código html. <br>* O <code>href</code> indica onde está o arquivo. <br>
+        ** <em>media types</em> mais usados:</p>
+        <ul>
+            <li><code>application/zip</code></li>
+            <li><code>text/html</code></li>
+            <li><code>text/css</code></li>
+            <li><code>text/javascript</code></li>
+            <li><code>video/mp4</code></li>
+            <li><code>video/H264</code></li>
+            <li><code>video/JPEG</code></li>
+            <li><code>audio/aac</code></li>
+            <li><code>audio/mpeg</code></li>
+            <li><code>font/ttf</code></li>
+            <li><code>image/jpeg</code></li>
+            <li><code>image/png</code></li>
+        </ul>
+        </ul>
+<h3>
+    <li>Capítulo 11</li>
+</h3>
+    <ul>
+        <h4>
+            <li>Aula 2 - Imagens que se adaptam sozinhas</li>
+        </h4>
+        <p>Para adaptar as imagens do site aos diversos dispositivos, é necessário que criemos tamanhos diferentes dessas imagens. Nesta situação, devemos utilizar as tags <code>&lt;picture&gt;</code> e <code>&lt;source&gt;</code>.</p>
+        <p><strong>Exemplo de estrutura:</strong></p>
+        <p><pre>
+        <code>&lt;picture&gt;
+            &lt;source <strong>media</strong>="(max-width: 1050px)" <strong>srcset</strong>="foto-m.png" <strong>type</strong>="image/png"
+            &lt;img src="foto-g.png" alt="texto alternativo"&gt;
+        &lt;/picture&gt;
+            </code></pre></p>
+        <p><strong>NOTA:</strong> A tag <code>&lt;source&gt;</code>, possui 3 atributos:</p>
+        <ul>
+            <li><code>type:</code> vai indicar o <em>media type</em> da imagem usada;</li>
+            <li><code>srcset:</code> vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido;</li>
+            <li><code>media:</code> vai indicar o tamaxo máximo a ser considerado para carregar a imagem indicada no atrivuto <code>srcset</code></li>
+        </ul>
+        <p>* Outra observação acerca do <code>&lt;source&gt;</code>, é que sua ordem vai importar. Os itens mais acima devem ser as imagens de menor tamanho, ou seja, a ordem deverá ser crescente. De modo que o último item dentro da tag <code>&lt;picture&gt;</code> será a imagem padrão.</p>
+        <h4>
+            <li>Aula 3 - Colocando áudio no site</li>
+        </h4>
+    <p>É possível indexar áudios em sites utilizando o HTML. Basta usar a tag <code>&lt;audio&gt;</code> e dentro dela, o <code>&lt;source&gt;</code>. <br> 
+    É importante destacar os principais atributos da tag <code>&lt;audio&gt;</code>, são eles:</p>
+    <ul>
+        <li><code><strong>preload:</strong> </code> que vai permitir que o áudio seja precarregado ou não, aceitando os seguintes valores:</li>
+        <ul>
+            <li><code>metadata:</code> que vai permitir que o site carregue apenas as informações sobre o arquivo, como tamanho, tempo, informações de direitos autorais, etc;</li>
+            <li><code>none:</code> que não vai carregar/reproduzir nada até que o usuário clique no botão de play;</li>
+            <strike>
+                <li><code>auto:</code> é o padrão do código, vai carregar o arquivo de áudio integralmente assim que a página for carregada, independente do usuário clicar no play;</li>
+            </strike>
+        </ul>
+        <li><code><strong>controls:</strong> </code> vai mostrar o player na tela, permitindo a interação do usuário;</li>
+        <li><code><strong>loop:</strong></code> faz com que o áudio se repita assim que sua reprodução é terminada;</li>
+    </ul>
+    <p><strong>Exemplo de estrutura:</strong></p>
+    <p><pre>
+    <code>&lt;audio <strong>preload</strong>="metadata" <strong>controls autoplay lopp</strong>&gt;
+        &lt;source <strong>src</strong>="midia/musica-004.mp3" <strong>type</strong>="audio/mpeg"&gt;
+        &lt;source <strong>src</strong>="midia/musica-004.mp3" <strong>type</strong>="audio/mpeg"&gt;
+        &lt;source <strong>src</strong>="midia/musica-004.mp3" <strong>type</strong>="audio/mpeg"&gt;
+        &lt;p&gt;Seu navegador não suporta áudio
+        &lt;a <strong>href</strong>="midia/musica-004.mp3" 
+        <strong>download</strong>="musica-004.mp3" <strong>type</strong>="audio/mpeg"&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/audio&gt;
+        </code></pre></p>
+    <p><strong>NOTA:</strong> assim como na dinamização de imagens, a ordem dos <code>&lt;source&gt;</code> vai importar. Sendo que na parte de cima devemos colocar o formato de áudio preferido, de modo que os demais só serão carregados caso os que estiverem acima dele não carreguem. Além disso, é possível criar uma outra alternativa para caso nenhum dos formatos indexados não carregarem, adicionamos um parágrafo que vai permitir que o usuário faça o download do áudio para ouvir no player padrão do dispositivo.</p>
+        <h4>
+            <li>Aula 5 - Vídeos em hospedagem própria</li>
+        </h4>
+        <p>Os vídeos de hospedagem própria funcionam da mesma forma que os áudios, mas usamos a tag <code>&lt;video&gt;</code> com outros atributos:</p>
+        <ul>
+            <li><code><strong>width:</strong></code> vai indicar a largura que o vídeo vai ter na tela;</li>
+            <li><code><strong>poster:</strong></code> vai configurar a <em>thumb</em> que vai aparecer como capa do vídeo enquanto o usuário não der play;</li>
+            <li><code><strong>controls:</strong></code> vai configurar se os controles do vídeo aparecerão na parte inferior da mídia, por padrão não vai aparecer, mas é só colocar este atributo;</li>
+            <li><code><strong>autoplay:</strong></code> indica ao navegador se o vídeo vai reproduzir automaticamente assim que a página for carregada;</li>
+        </ul>
+        <p><strong>Exemplo de estrutura:</strong></p>
+        <p><pre>
+        <code>&lt;video <strong>width</strong>="600" <strong>poster</strong>="thumb.jpg" <strong>controls autoplay</strong>&gt;
+            &lt;source <strong>src</strong>="meu-video.webm"<strong>type</strong>="video/webm"&gt;
+            &lt;source <strong>src</strong>="meu-video.mp4" <strong>type</strong>="video/mp4"&gt;
+            &lt;source <strong>src</strong>="meu-video.ogv" <strong>type</strong>="video/ogg"&gt;
+            &lt;p&gt;Infelizmente seu navegador não conseguiu carregar o vídeo.&lt;/p&gt;
+        &lt;/video&gt;
+            </code></pre></p>
+        <h4>    
+        <li>Aula 6 - Incorporação de vídeos externos</li>
+        </h4>
+        <p>A incorporação de vídeos externos é uma alternativa mais interessante e de menor custo, uma vez que estes vão consumir menos bytes por estarem hospedados em outros servidores. Desta forma, sites como <strong><a href="http://youtube.com">Youtube</a></strong> e <strong><a href="https://vimeo.com/pt-br/">Vimeo</a></strong>, permitem que copiemos o código HTML dos vídeos desejados. 
+            <br><br>Encontramos este código pronto no campo:<br> <br><code>Compartilhar &gt; Incorporar &gt; Copiar</code>. </p>
+    </ul>
+    <h3>
+        <li>Capítulo 12</li>
+    </h3>
+        <ul>
+            <h4>
+                <li>Aula 1 - Estilos CSS <em>inline</em></li>
+            </h4>
+            <p>O estilo CSS <em>inline</em> serve para alterações de estilos específicas e pontuais. Este tipo é caracterizado pela aplicação de estilos diretamente em um elemento HTML. Para isso, utilizamos o atributo <code>style</code>, que vai permitir alterações específicas em um único elemento sem precisar criar um documento <code>(.css)</code> separado.</p>
+            <p><strong>Exemplo:</strong>
+            <code><pre>
+        &lt;p <strong>style=</strong>"color: blue;"&gt;Este é um parágrafo azul.&lt;/p&gt;
+            </pre></code></p>
+            <h4>
+                <li>Aula 2 - Estilos CSS internos</li>
+            </h4>
+            <p>O estilo CSS <strong>interno</strong> (ou local) é aquele onde se inclui os estilos dentro do prórprio documento html, no cabeçalho (<code>&lt;head&gt;&lt;/head&gt;</code>).</p>
+            <p><strong>Exemplo:</strong>
+            <code><pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="pt-br"&gt;
+        &lt;head&gt;
+        &lt;meta charset= "UTF-8"&gt;
+        &lt;meta name= "viewport" content="width=device-width, initial-scale= 1.0"
+        &lt;link <strong>rel=</strong>"stylesheet"
+            &lt;style&gt;
+            p {
+                    <strong>color:</strong>
+                    <strong>font-size:</strong>
+                    <strong>background-color:</strong>
+                    <strong>font-family:</strong>
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;Este é um parágrafo com estilo interno.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        </pre></code></p>
+        <p><strong>NOTA:</strong> o uso do estilo CSS local é mais comum para sites menores, com poucas páginas. Nele, é possível fazer todas as configurações de estilo no mesmo documento HTML, o que pode deixá-lo mais longo. </p>
+            <h4>
+                <li>Aula 3 - Estilos CSS externos</li>
+            </h4>
+        <p>O estilo CSS <strong>externo</strong> é aquele em que criamos uma estrutura separada do documento html. Nele é possível definir os estilos a serem aplicados em todas as páginas que incluem o mesmo arquivo <code>.css</code> externo, possibilitando sites mais consistentes. Neste tipo de estrutura, quando o site necessitar de um estilo personalizado para cada página, podemos criar mais de um arquivo <code>.css</code> e incluir no documento html.</p>
+        <p><strong>Exemplo do arquivo <code>.css</code> dentro do código html:</strong></p>
+        <code><pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="pt-br"&gt;
+        &lt;head&gt;
+            &lt;meta charset= "UTF-8"&gt;
+            &lt;meta name= "viewport" content="width=device-width, initial-scale= 1.0"
+            &lt;link <strong>rel=</strong>"stylesheet" <strong>type=</strong>"text/css" <strong>href=</strong>"style.css"&gt;
+            &lt;title&gt;CSS externo&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Estilo CSS externo.&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+        </pre></code>
+        <p><strong>NOTA:</strong> nesse estilo, utilizamos a tag <code>&lt;link&gt;</code> dentro do cabeçalho para adicionarmos o documento <code>.css</code>, da mesma forma que se faz com o <code>favicon</code>. De forma que teremos os seguintes atributos:
+             <ul>
+                <li><code>rel:</code> para indicar o vínculo da folha de estilo com o html;</li>
+                <li><code>type:</code> para especificar o tipo de mídia; </li>
+                <li><code>href:</code> que vai direcionar para o arquivo <code>.css</code> externo.</ul></p></li>
+        </ul>
+        <hr>
+        <a style="text-align: center;" href="pag02.html">
+            <p>Próximo &gt;&gt;</p>
+        <hr>
+        </a>
+        <footer style="text-align: center;">&copy; 2023 Shayene</footer>
+</body>
+</html>
