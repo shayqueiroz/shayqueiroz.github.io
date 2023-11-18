@@ -1,1 +1,154 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap');
+
+:root {
+
+    --cor01: #069861;
+    --cor02: #d9ede1;
+    --cor03: #e6e9eb;
+    --cor04: #f3ece9;
+    --cor05: #272a35;
+    --cor06: #fff3a3;
+    --cor07: #88e6c2;
+    --cor08: #ffe9d4;
+
+    --fonte01: 'Source Sans 3', sans-serif;
+    --fonte02: 'Courier New', Courier, monospace;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: var(--fonte01);
+    font-size: 1.1em;
+}
+
+header {
+    background-color: var(--cor05);
+    color: var(--cor04);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    min-width: 150px;
+}
+
+header > h1 {
+    font-size: 3em;
+    font-weight: bolder;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, .6);
+}
+
+header > p {
+    margin: auto;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, .6);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--cor06);
+    font-weight: bolder;
+}
+
+header a:hover {
+    color: var(--cor03);
+    padding: .7px;
+}
+
+nav {
+    background-color: var(--cor05);
+    color: var(--cor04);
+    padding: 5px;
+    margin-bottom: 5px;
+    text-shadow: 0px 5px 5px rgb(0,5,5,0.2);
+}
+
+nav > a {
+    color: var(--cor04);
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    background-color: black;
+    color: #e6e9eb;
+    padding: 5px;
+}
+
+main {
+    min-width: 420px;
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    background-color: white;
+    text-align: justify;
+    line-height: 2.1em;
+}
+
+section a {
+    text-decoration: none;
+    color: var(--cor01)
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+
+aside h4 {
+    background-color: var(--cor05);
+    color: var(--cor03);
+    padding: 0px 0px 0px 20px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    background-color: var(--cor02);
+    color: var(--cor05);
+    list-style-type: circle;
+    list-style-position: inside;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+aside#mod1 ul {
+    background-color: var(--cor06);
+    color: var(--cor05);
+}
+
+aside#mod2 ul {
+    background-color: var(--cor07);
+    color: var(--cor05);
+}
+
+aside#mod3 ul {
+    background-color: var(--cor03);
+}
+
+aside#mod4 ul {
+    background-color: var(--cor08);
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--cor05);
+    color: var(--cor03);
+    text-align: center;
+    font-size: .8em;
+    padding: 5px;
+}
