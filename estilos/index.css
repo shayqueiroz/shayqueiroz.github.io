@@ -2,8 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap');
 
-@media (max-width: 768px);
-
 :root {
 
     --cor01: #069861;
@@ -36,6 +34,8 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    min-width: 350px;
+    margin: auto;
 }
 
 header > h1 {
