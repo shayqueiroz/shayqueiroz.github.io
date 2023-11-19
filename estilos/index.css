@@ -81,6 +81,11 @@ nav > a:hover {
     padding: 5px;
 }
 
+li.inline {
+    display: inline-block;
+    list-style-type: none;
+}
+
 main {
     margin: auto;
     padding-left: 30px;
