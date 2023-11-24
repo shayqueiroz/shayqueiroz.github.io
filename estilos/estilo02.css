@@ -90,6 +90,7 @@ li.inline {
 
 main {
     margin: auto;
+    max-width: 1000px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 20px;
