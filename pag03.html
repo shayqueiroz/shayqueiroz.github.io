@@ -79,11 +79,39 @@
             <img src="imagens/mod-03-bg.png" alt="prop-bg">
             <p>Além das propriedades e valores para o <code>background-repeat</code>, também é possível fazer alterações na posição de referência de início das repetições, o que chamamos de <strong>ancoragem</strong>. Por padrão, as imagens de fundo ficam ancoradas no canto superior esquerdo (<code>left top</code>) da página. Através da propriedade <code><strong>background-position</strong></code> podemos obter outras oito formas de ancoragem. É importante dizer que estes pontos de ancoragem serão feitos sempre na ordem de <strong>colunas</strong> e <strong>linhas</strong>.</p>
             <img src="imagens/bg-position.png" alt="bgposition">
+            <p>Considerando os valores para <code><strong>background-position</strong></code>, tomemos como base a imagem de fundo abaixo.</p>
+            <img src="imagens/background-position.png" alt="bgposition">
+            <p>Agora, aplicando as configurações de <code><strong>background-position</strong></code>, teremos:</p>
+            <img src="imagens/bg-position-top.png" alt="backfround position top">
+            <p>Acima foram aplicados os valores, respectivamente, <code>left top - center top - right top</code>. Onde o padrão para esta propriedade é o <code>background-position: left top.</code></p>
+            <img src="imagens/bg-position-center.png" alt="background-position center">
+            <p>Acima temos os valores de <code>background-position: left center - center center - right center.</code> E por fim, teremos o <code>background-position: left bottom - center bottom - right bottom.</code></p>
+            <img src="imagens/bg-position-bottom.png" alt="background-position bottom">
+            <h4>Nota:</h4>
+            <p>Observe que para cada valor atribuído no <code>background-position</code>, a imagem de fundo aparece ancorada em um ponto específico. Esta ferramenta permite um controle mais preciso sobre a posição da imagem de fundo, permitindo ajustes que contribuem para maior acessibilidade dos elementos visuais no site. Além disso, é um importante aliado da responsividade.</p>
             <p>Além de ser possível determinar o ponto de ancoragem da imagem do background de um site, podemos também redimensioná-la. Por padrão, não há nenhum redimensionamento predefinido, portanto a imagem usada será aplicada em seu tamanho original. Para fazermos configurações personalizadas do tamanho, utilizamos a propriedade <code><strong>background-size</strong></code>, que aceita os seguintes valores:</p>
             <p><code><strong>Auto:</strong> é a configuração padrão, a imagem de fundo será aplicada em seu tamanho original</code></p>
             <p><code><strong>[length] px e [length]%:</strong></code> redimensiona a largura da imagem e faz a altura se adaptar automaticamente</p>
             <p><code><strong>cover:</strong> altera o tamanho da imagem para que ela seja exibida na tela sem nenhum corte</code></p>
             <p><code><strong>contain:</strong> redimensiona a imagem para que ela cubra o container, mesmo que para isso seja necessário cortes</code></p>
+            <p>Outra propriedade utilizada para configurar imagens de fundo de um site é o <code><strong>background-attachment</strong></code>. Ela é bastante útil quando o conteúdo do site é maior do que a a altura da página e se faz necessário vazar uma rolagem vertical. O <code>background-attachment</code> é capaz de controlar se uma imagem de fundo rola com o conteúdo da página ou se ela vai permanecer fixa. Esta propriedade aceita apenas dois valores: </p>
+            <p><code><strong>scroll:</strong></code> é a configuração padrão, onde a imagem de fundo vai rolar junto com o conteúdo do site</p>
+            <p><code><strong>fixed:</strong></code> a imagem de fundo vai ficar fixada enquanto o conteúdo vai sendo rolado</p>
+            <h4><em>Shorthand</em> para <em>background</em></h4>
+            <p>A propriedade abreviada de <code>background</code> pode ser declarada agrupando as seguintes configurações, necessariamente, nesta ordem:</p>
+            <ul>
+                <li><code>background-color</code></li>
+                <li><code>background-image</code></li>
+                <li><code>background-position</code></li>
+                <li><code>background-repeat</code></li>
+                <li><code>background-attachment</code></li>
+            </ul>
+            <p>De forma resumida, a <em>shorthand</em> fica:</p>
+            <code><strong>background:</strong> #fffff url('') left center no-repeat fixed;</code>
+            <p>É importante dizer que os valores atribuídos na <em>shorthand</em> não são separados por vírgulas ou qualquer outro tipo de caracter de separação. Outra observação é que, até <ins>Novembro de 2023</ins> o <code>size</code> da <em>shorthand</em> não está funcionando. Desta forma, é preciso declarar o <code>background-size</code> fora da <em>shorthand</em>.</p>
+        </section>
+        <section>
+            <h3>Centralização vertical em containers</h3>
         </section>
 
 
