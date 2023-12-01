@@ -155,10 +155,67 @@
             <img src="imagens/bg-pos-absolute.png" alt="background-position">
         </section>
         <section>
-            
+            <h2>Capítulo 20</h2>
+            <h3>Projeto usando <em>parallax</em></h3>
+            <p>(colocar um iframe com o projeto que desenvolvi neste cap[itulo)</p>
         </section>
-
-
+        <section>
+            <h2>Capítulo 21</h2>
+            <h3>Conteúdos em Tabelas</h3>
+            <p>As tabelas são entendidas como um conjunto de dados tabulados, onde sua hierarquia é extremamente importante. Elas são utilizadas na apresentação de conteúdos, portanto sua estrutura não é mais usada para desenvolvimento do esqueleto de sites. Podemos estruturar uma tabela com os seguintes elementos básicos:<br>
+            <br><code><strong>caption:</strong></code><br>
+            <code><strong>thead:</strong></code><br>
+            <code><strong>tbody:</strong></code><br>
+            <code><strong>tfoot:</strong></code></p>
+            <p>Sendo que, todos os elementos estarão dentro de uma tag de tabela, <strong><code>&lt;table&gt;</code></strong>. Além disso, existem outras tags utilizadas na criação de tabelas, são elas: <code><strong>&lt;tr&gt;</strong>
+            </code>, para as linhas da tabela, onde vão estar o cabeçalho, e o <code><strong>&lt;td&gt;</strong></code>, onde ficarão os dados da tabela.</p>
+            <p>Observe abaixo um exemplo de estrutura básica de uma tabela:</p>
+            <pre class="code-box">
+                &lt;table&gt;
+                    &lt;caption&gt;
+                        <strong>População das Unidades Federativas</strong>
+                    &lt;/caption&gt;
+                    &lt;thead&gt;
+                        <strong>Cidade | População</strong>
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        <strong>Dados referentes as informações do <code>thead</code></strong>
+                    &lt;/tbody&gt;
+                    &lt;tfoot&gt;
+                        <strong>Total dos dados referentes ao <code>tbody</code></strong>
+                    &lt;/tfoot&gt;
+                &lt;/table&gt;
+            </pre>
+            <img src="imagens/basic-table.png" alt="tabela">
+            <p>Na tabela acima, temos:</p>
+            <ol>
+                <li>Título: <code>&lt;caption&gt;</code></li>
+                <li>Cabeçalho: <code>&lt;thead&gt;</code></li>
+                <li>Corpo: <code>&lt;tbody&gt;</code></li>
+                <li>Rodapé: <code>&lt;tfoot&gt;</code></li>
+            </ol>
+            <p>Para compreendermos melhor a estrutura e demarcação da hierarquia das células, analisaremos o código a seguir:</p>
+            <pre class="code-box">
+                <strong>&lt;tbody&gt;</strong> <em>&lt;!-- corpo da tabela --&gt;</em>
+                    <strong>&lt;tr&gt;</strong> <em>&lt;!-- primeira linha --&gt;</em>
+                        <strong>&lt;td&gt;</strong>São Paulo<strong>&lt;/td&gt;</strong> <em>&lt;!-- primeira célula da primeira linha --&gt;</em>
+                        <strong>&lt;td&gt;</strong>45.919.049<strong>&lt;/td&gt;</strong> <em>&lt;!-- segunda célula da primeira linha --&gt;</em>
+                    <strong>&lt;/tr&gt;</strong> 
+                    <strong>&lt;tr&gt;</strong> <em>&lt;!-- segunda linha --&gt;</em>
+                        <strong>&lt;td&gt;</strong>Minas Gerais<strong>&lt;/td&gt;</strong><em>&lt;!-- primeira célula da segunda linha --&gt;</em>
+                        <strong>&lt;td&gt;</strong>21.168.791<strong>&lt;/td&gt;</strong> <em>&lt;!-- segunda célula da segunda linha --&gt;</em>
+                    <strong>&lt;/tr&gt;</strong>
+                    ...
+                <strong>&lt;/tbody&gt;</strong>
+            </pre>
+            <img src="imagens/basic-table-detail.png" alt="detalhe da tabela">
+            <p>Cada área da tabela é dividida em <strong>linhas</strong> (<em>table rows - &lt;tr&gt;</em>), no exemplo acima está representada através do número 5, e ocupa a largura total da tabela. Dentro das linhas, temos <strong>células de dados </strong>(<em>table data - &lt;td&gt;</em>), representadas pelos números 6 e 7, ou <strong>células de cabeçalho</strong> (<em>table header - &lt;th&gt;</em>).</p>
+            <h4>DICA</h4>
+            <p>Usamos o <code>&lt;td&gt;</code> quando a célula contiver um dado e usaremos o <code>&lt;th&gt;</code> para quando a célula contiver um identificador de dados, esta tag é usada para definir títulos de colunas ou linhas. Ambos precisam estar dentro de um <code>&lt;tr&gt;</code>. No exemplo usado, o <code>&lt;td&gt;</code> pode ser Minas Gerais, São Paulo, Rio de Janeiro etc, e o <code>&lt;th&gt;</code> pode ser Cidade ou População.</p>
+        </section>
+        <section>
+            <h3>Definindo escopo de coluna &lt;th&gt;</h3>
+        </section>
 
 
     </main>
