@@ -92,8 +92,8 @@
             <p>Observe que para cada valor atribuído no <code>background-position</code>, a imagem de fundo aparece ancorada em um ponto específico. Esta ferramenta permite um controle mais preciso sobre a posição da imagem de fundo, permitindo ajustes que contribuem para maior acessibilidade dos elementos visuais no site. Além disso, é um importante aliado da responsividade.</p>
             <p>Além de ser possível determinar o ponto de ancoragem da imagem do background de um site, podemos também redimensioná-la. Por padrão, não há nenhum redimensionamento predefinido, portanto a imagem usada será aplicada em seu tamanho original. Para fazermos configurações personalizadas do tamanho, utilizamos a propriedade <code><strong>background-size</strong></code>, que aceita os seguintes valores:</p>
             <p><code><strong>Auto:</strong> é a configuração padrão, a imagem de fundo será aplicada em seu tamanho original</code></p>
-            <p><code><strong>[length] px e [length]%:</strong></code> redimensiona a largura da imagem e faz a altura se adaptar automaticamente</p>
-            <p><code><strong>cover:</strong> altera o tamanho da imagem para que ela seja exibida na tela sem nenhum corte</code></p>
+            <p><code><strong>[length] px e [length]%:</strong> redimensiona a largura da imagem e faz a altura se adaptar automaticamente</code></p>
+            <p><code><strong>cover:</strong> altera o tamanho da imagem para que ela seja exibida na tela sem nenhum corte ou distorção, mantendo a proporção original da imagem. Ajustando de forma automática o tamanho da imagem para preencher o container inteiro, sem deixar áreas em branco</code></p>
             <p><code><strong>contain:</strong> redimensiona a imagem para que ela cubra o container, mesmo que para isso seja necessário cortes</code></p>
             <p>Outra propriedade utilizada para configurar imagens de fundo de um site é o <code><strong>background-attachment</strong></code>. Ela é bastante útil quando o conteúdo do site é maior do que a a altura da página e se faz necessário vazar uma rolagem vertical. O <code>background-attachment</code> é capaz de controlar se uma imagem de fundo rola com o conteúdo da página ou se ela vai permanecer fixa. Esta propriedade aceita apenas dois valores: </p>
             <p><code><strong>scroll:</strong></code> é a configuração padrão, onde a imagem de fundo vai rolar junto com o conteúdo do site</p>
@@ -113,6 +113,49 @@
         </section>
         <section>
             <h3>Centralização vertical em containers</h3>
+            <p>Diferentemente da centralização horizontal, onde podemos utilizar a propriedade de <code><strong>margin:auto;</strong></code> para centralizar os blocos, a centralização vertical utiliza outro tipo de técnica. Nela,é necessário que se tenha na declaração um container (elemento pai que contém o conteúdo a ser centralizado verticalmente, com altura definida) e um conteúdo (elemento interno que será centralizado verticalmente dentro do container).</p>
+            <p>Vale a pena destacar que, por padrão, todo posicionamento de um box em HTML é <strong><code>position:relative;</code></strong> e o conteúdo (a parte de dentro do container) é <code><strong>position:absolute;</strong></code>.</p>
+            <p>Para centralizarmos verticalmente um conteúdo, é preciso primeiro definir a posição <strong>relativa</strong> no container pai (caixa de fora) e a posição <strong>absoluta</strong> no container de dentro a ser centralizado. Depois disso, usamos o <strong><code>height</code></strong> e <strong><code>width</code></strong> para definir a altura e largura do container de dentro (container que recebeu a configuração <code>position:absolute;</code>). Quando definimos um bloco com <code>position: absolute;</code> podemos personalizar a sua posição exata através das propriedades <code>left</code> e <code>top</code>, adicionando o valor de 50% para cada propriedade para que o container fique centralizado. Por fim a propriedade <strong><code>transform:translate (,);</code></strong> vai permitir que o conteúdo de dentro fique centralizado verticalmente.</p>
+            <p>Observe como funciona a centralização vertical simples de dois blocos:</p>
+            <h4><strong>HTML</strong></h4>
+            <pre class="code-box">
+                <strong>&lt;div </strong>id="out"<strong>&gt;</strong> 
+                    <strong>&lt;div</strong> id="in"<strong>&gt;</strong>
+                    <strong>&lt;/div&gt;
+                &lt;/div&gt;</strong>
+            </pre>
+            <h4><strong>CSS</strong></h4>
+            <pre class="code-box">
+                <strong>div#out {</strong>
+                    height: 96vh;
+                    background-color: #FFD966FF;
+                    position: relative;
+                <strong>}</strong>
+
+
+                <strong>div#in {</strong>
+                    height: 200px;
+                    width: 300px;
+                    background-color: #D2B497FF;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                <strong>}</strong>
+            </pre>
+            <img src="imagens/bg-pos-relative.png" alt="background-position">
+            <p>Note que, pelas linhas tracejadas, o container interno foi de fato posicionado a 50% da tela, mas pelo canto superior esquerdo da caixa. Para corrigir isso, de modo que ele fique exatamente centralizado verticalmente, adicionaremos dentro do nosso código a seguinte declaração:</p>
+            <pre class="code-box">
+                <strong>div#in {</strong>
+                    ...
+                    transform: translate (-50%, -50%);
+                    ...
+                <strong>}</strong>
+            </pre>
+            <p>Com isso, teremos como resultado o container interno centralizado verticalmente exatamente ao centro do container externo.</p>
+            <img src="imagens/bg-pos-absolute.png" alt="background-position">
+        </section>
+        <section>
+            
         </section>
 
 
