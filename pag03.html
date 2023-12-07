@@ -215,8 +215,62 @@
         </section>
         <section>
             <h3>Definindo escopo de coluna &lt;th&gt;</h3>
+            <p>As definições de títulos de colunas ou linhas são determinadas pela tag <code><strong>&lt;th&gt;</strong></code>. Mas para que estes títulos definidos nas colunas estejam relacionados a determinados dados de uma tabela, utilizamos o <code><strong>scope="col"</strong></code> dentro da tag de <code>&lt;th&gt;</code>. Este atributo vai permitir que os dados abaixo do título recebam dados relacionados a eles, são denominados o <strong>escopo de coluna</strong>. Já para dados que correspondam a um total, por exemplo, usamos o <code><strong>scope="row"</strong></code>, dentro da tag <code>&lt;th&gt;</code>. Estes dados vão estar ao lado do título, portanto, recebem o nome de <strong>escopo de linha.</strong>.</p>
+            <p>Veja na prática:</p>
+            <pre class="code-box">
+                <strong>&lt;tr&gt;</strong>
+                    &lt;th <strong>scope="col"</strong>&gt;Cidade&lt;/th&gt;
+                    &lt;th <strong>scope="col"</strong>&gt;População&lt;/th&gt;
+                <strong>&lt;/tr&gt;</strong>
+                ...
+                <strong>&lt;tr&gt;</strong>
+                    &lt;th <strong>scope="row"</strong>&gt;Total&lt;/th&gt;
+                    &lt;td&gt;110.659.804&lt;/td&gt;
+                <strong>&lt;/tr&gt;</strong>
+            </pre>
+            <img src="imagens/tabela-scope.png" alt="escopo de tabela">
+            <p>Observe no exemplo acima que tanto "Cidade" quanto "População" receberam seus respectivos dados abaixo dos seus títulos <code><strong>(scope="col")</strong></code>, enquanto o "Total" recebeu os dados à direita <code><strong>(scope="row")</strong></code>.</p>
+            <h4>IMPORTANTE!</h4>
+            <p>A hierarquia dos componentes de uma tabela é fundamental. Não obedecê-la comprometerá a estrutura do código e a ordem da apresentação dos dados. Deixando a tabela desorganizada e inconsistente.</p>
         </section>
-
+        <section>
+            <h3>Configurando estilo nas tabelas com CSS</h3>
+        <p>Observe os detalhes da tabela a seguir:</p>
+        <h4><strong>HTML</strong></h4>
+        <pre class="code-box">
+            &lt;table&gt;
+                &lt;tr&gt; 
+                    &lt;td&gt;<strong>A1</strong>&lt;/td&gt; 
+                    &lt;td&gt;<strong>B1</strong>&lt;/td&gt; 
+                    &lt;td&gt;<strong>C1</strong>&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt; 
+                    &lt;td&gt;<strong>A2</strong>&lt;/td&gt; 
+                    &lt;td&gt;<strong>B2</strong>&lt;/td&gt; 
+                    &lt;td&gt;<strong>C2</strong>&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt; 
+                    &lt;td&gt;<strong>A3</strong>&lt;/td&gt; 
+                    &lt;td&gt;<strong>B3</strong>&lt;/td&gt; 
+                    &lt;td&gt;<strong>C3</strong>&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt; 
+                    &lt;td&gt;<strong>A4</strong>&lt;/td&gt; 
+                    &lt;td&gt;<strong>B4</strong>&lt;/td&gt; 
+                    &lt;td&gt;<strong>C4</strong>&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        </pre>
+        <h4><strong>CSS</strong></h4>        <pre class="code-box">
+            table {
+                width: 400px;
+                border-colapse: separate;
+            }
+            td, th {
+                border: 1px solid #ffff;
+                padding 8px;
+            }
+        </section>
 
     </main>
     <footer>&copy; 2023 shayene</footer>
