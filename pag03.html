@@ -261,7 +261,8 @@
                 &lt;/tr&gt;
             &lt;/table&gt;
         </pre>
-        <h4><strong>CSS</strong></h4>        <pre class="code-box">
+        <h4><strong>CSS</strong></h4>
+        <pre class="code-box">
             table {
                 width: 400px;
                 border-colapse: separate;
@@ -270,6 +271,65 @@
                 border: 1px solid #ffff;
                 padding 8px;
             }
+        </pre>
+        <p>No navegador teremos o seguinte resultado:</p>
+        <img src="imagens/tabela-collapse.png" alt="tabela-collapse">
+        <p><strong>NOTA:</strong> observe na tabela a esquerda que, por padrão, a configuração para <code>border-colapse</code> mantem as células com um pequeno espaçamento. No exemplo da tabela a direita, ao adicionarmos o valor de <code>collapse</code> para o border-colapse, este espaçamento é suprimido.</p>
+
+        <h3>Alinhamento do conteúdo da célula</h3>
+        <p>Por padrão, o alinhamento dos dados de uma tabela  <code>&lt;td&gt;</code> vem sempre alinhados à esquerda. Mas temos outros dois tipos de alinhamento.</p>
+        <p><strong>Alinhamento horizontal -</strong> usando a propriedade <code>text-align</code>, de modo que os valores aceitos são: <code>left - center - right</code>. Este tipo de alinhamento é feito da mesma forma de um elemento exibido como bloco, como uma <code>div</code>, por exemplo. Caso o texto da tabela seja muito grande, utilizando o <code>justify</code> teremos o alinhamento primordialmente pelo lado esquerdo e também à direita.</p>
+        <p><strong>Alinhamento vertical -</strong> usando a propriedade <code>vertical-align</code> deixamos o texto da tabela alinhado verticalmente. Para esta propriedade, são aceitos os seguintes valores: <code>top - middle - bottom</code></p>
+        <h3>Efeito zebrado</h3>
+        <p>Para criamos um efeito de cores intercaladas numa tabela, dando um aspecto listrado que facilita a leitura em tabelas com conteúdo muito extenso, utilizamos os seguintes valores nos seletores de estilo:</p><br>
+        <pre class="code-box">
+            tbody > tr:nth-child(even) {
+                background-color: #999999ff;
+            }
+
+            tbody > tr:nth-child(odd) {
+                background-color: #d9d9d9ff;
+            }
+        </pre>
+        <p>Veja o resultado no navegador:</p>
+        <img src="imagens/tabela-zebrada.png" alt="efeito zebrado">
+        <p><strong>EXPLICAÇÃO:</strong> O seletor <code>tr:nth-child</code> é que permite selecionar em uma tabela HTML com base na sua posição em relação aos outros elementos (pseudo-classes). É este atributo que vai dar o efeito zebrado nas linhas da tabela. Podemos colocar <em>odd/even</em> para as linhas pares e ímpares, como também <em>2n - 3n - 4n ...</em> para que o efeito se dê de 2 em 2 linhas, 3 em 3, 4 em 4 e assim por diante.</p>
+        </section>
+        <section>
+            <h3>Alcance das células de uma tabela</h3>
+            <p>Para termos resultados mais organizados dos dados de uma tabela, é possível fazer alterações no alcance das células utilizando as propriedades HTML <code><strong>colspan</strong></code> e <code><strong>rowspan</strong></code>.</p>
+            <p>Observe o código a seguir</p>
+            <pre class="code-box">
+                &lt;table&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;Grupo&lt;/th&gt;
+                            &lt;th&gt;Nomes&lt;/th&gt;
+                            &lt;th <ins>colspan="3"</ins>&gt;Filmes&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td <ins>rowspan="3"</ins>&gt;Atrizes&lt;/td&gt;
+                        &lt;td&gt;Angelina Jolie&lt;/td&gt;
+                        &lt;td&gt;Salt&lt;/td&gt;
+                        &lt;td&gt;Malévola&lt;/td&gt;
+                        &lt;td&gt;O Turista&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Meryl Streep&lt;/td&gt;
+                        &lt;td&gt;O Diabo Veste Prada&lt;/td&gt;
+                        &lt;td&gt;A Dama de Ferro&lt;/td&gt;
+                        &lt;td&gt;The Post&lt;/td&gt;
+                    &lt;/tr&gt;
+            </pre>
+            <img src="imagens/tabela-col-rowspan.png" alt="col e rowspan">
+            <p>No &lt;thead&gt; da tabela temos uma célula (Filmes) que ocupa o espaço de três <strong>colunas</strong>, e na lateral esqueda da tabela, as células com "Atrizes" e "Atores" ocupam três <strong>linhas</strong> cada. Dito isso, para mesclarmos essas células, utilizamos as propriedades de <code>colspan</code>, para mesclagem de colunas, e <code>rowspan</code> para mesclagem de linhas.</p>
+            <p>Observe um outro exemplo da aplicação do <code>colspan</code> e <code>rowspan</code>.</p>
+            <img src="imagens/table-col-rowspan.png" alt="teste colrowspan">
+            <p>No exemplo acima, teremos o seguinte código:</p>
+            <pre class="code-box">
+            </pre>
         </section>
 
     </main>
